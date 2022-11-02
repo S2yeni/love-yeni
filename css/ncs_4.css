@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* section.visual */
+.visual {width: 100%;overflow: hidden;position: relative; margin-bottom: 400px;}
+.visual .img {width: 350px;height: 180px;margin: 0 auto;}
+.visual img {width: 100%;}
+.visual a {display:inline-block;margin-bottom: 20px;}
+.visual .titBox {margin: 0 auto;}
+.visual .titBox .ko {font-size: 35px;margin-top: 15px; line-height: 1.2;}
+.visual .titBox .ko span {font-family: 'Open Sans', sans-serif;font-size: 25px;color:#EF3274;}
+
+/* .what */
+.what {width: 100%;margin: 0 auto 300px; overflow: hidden;padding-bottom: 300px;box-sizing: border-box;position: relative;}
+.what .inner {width: 1600px; margin: 0 auto; overflow: hidden;height: 100%;}
+.what p.left {width: 260px;height: 190px;float:left; margin:0 150px 0 400px;}
+.what p.left img {width: 100%; height: 100%;}
+.what .right {width: 30%;float:left;padding-top:40px;box-sizing: border-box;position: relative;}
+.what .right::after {content: '';width: 40px;height: 4px;background: #000;position: absolute;right:0;top:10px;}
+.what .right h3 {font-size: 30px; margin-bottom: 20px; text-align: right;}
+.what .right p {font-size: 15px;text-align: right; line-height: 1.5;}
+
+/* section.invest */
+.invest {width: 100%;background: #e5e5e5;position: relative; padding: 100px 0px;}
+.invest .inv {width: 1400px;margin: 0 auto; background: #fff;}
+.invest .inv .num {left:-50px;top:30px;}
+.invest .inv .titBox {margin-left:100px;padding-top: 100px;position: relative;}
+.invest .inv .titBox .tit {text-align: left;}
+.invest .inv .titBox p {margin-bottom: 20px;}
+.invest .inv ul {width: 100%;margin-top: 150px;}
+.invest .inv ul li {width: 90%;margin:100px auto 0; padding-bottom: 100px; border-bottom: 1px solid #ddd;}
+.invest .inv ul li p.img {width: 80%;margin: 0 auto;}
+.invest .inv ul li p.img img {width: 100%;}
+
+/* section.works */
+.works {width: 100%;position: relative; margin-top: 300px;}
+.works .num {width: 250px;transform: rotate(40deg);}
+.works .doc .num {right:-100px;top:-110px}
+.works .story .num {left:-50px;top:-80px;transform: rotate(0deg);}
+.works .xd .num {left:80px;top:-70px; transform: rotate(0deg);}
+.works .code .num {left:-60px;top:-80px;transform: rotate(0deg);}
+.works .step {margin: 0 auto 250px;overflow: hidden; padding: 100px; position: relative;}
+.works .titBox {position: relative;width: 500px;}
+
+/* .doc */
+.works .doc {width: 1400px;padding-bottom: 250px;border-bottom: 1px solid #ddd; box-sizing: border-box;}
+.works .doc .right {float:right;width: 50%;}
+.works .doc .right p.img {width: 100%; margin-bottom: 30px;}
+.works .doc .right p.img img {width: 100%;}
+.works .doc .titBox {width: 100%;margin-bottom: 100px;}
+.works .doc .titBox p {text-align: right;margin-bottom: 20px;}
+.works .doc .titBox h3 {text-align: right;}
+.works .doc .left {float:left;width: 50%;}
+.works .doc .left img {width: 50%; margin-left: 90px;}
+
+/* .story */
+.works .story {width: 1400px; padding-bottom: 300px; border-bottom: 1px solid #ddd; box-sizing: border-box;}
+.works .story .titBox {margin-bottom: 200px;}
+.works .story .tit {text-align: left;}
+.works .story p {margin-bottom: 20px;}
+.works .str {width: 80%;float:left;margin:0 0 100px 100px;}
+
+/* .xd */
+.works .xd {width: 1400px; padding-bottom: 300px; border-bottom: 1px solid #ddd; box-sizing: border-box;}
+.works .xd .titBox {margin:0 auto 100px;}
+.works .xd .imgBox {background: #DBFFE0;overflow: hidden;width: 100%;height: 800px; position: relative;}
+.works .xd .imgBox img {width: 33%;position: absolute;}
+.works .xd .imgBox img:nth-child(1) {left:20%;}
+.works .xd .imgBox img:nth-child(2) {width:20%;;left:60%;}
+
+/* .code */
+.works .code {width: 1400px;}
+.works .code .titBox {float:left;width: 30%;}
+.works .code .titBox .tit {text-align: left;}
+.works .code .titBox p.tit {margin-bottom: 50px;}
+.works .code .titBox p {line-height: 1.5;}
+.works .code p.img {float:right;width: 70%; }
+.works .code p.img img {width: 70%; margin-left:200px;}
+
+/* .result */
+.works .result {width: 600px; margin:0 auto 1200px;position:relative;}
+.works .result .tit.ko {font-size: 45px;}
+.wokrs .result ul {width: 100%; overflow: hidden; position: relative;}
+.works .result ul li {float:left;width: 50%;}
+.works .result ul li a {display: inline-block;margin:70px 0 0 80px;}
+.works .result ul li:nth-child(2) a {margin-left:176px;}
+.works .result ul li img {width: 200px;height: 90px; position: absolute;top:100px}
+.works .result ul li:nth-child(1) img {left:0}
+.works .result ul li:nth-child(2) img {right:0}
+.works .result ul li:hover , .works .result ul li:focus {color:#EF3274}
+
+
+/* .contact */
+.contact {width: 100%;height:694px;margin-top: 200px;overflow: hidden;}
+
+/* .bred */
+.bred::after {content: '04'}
+
+
+/* animate */
+.what.motion .left {animation-name: leftAni; animation-duration: 0.6s;}
+@keyframes leftAni {
+    0% {transform: translateY(150px);opacity: 0;}
+    30% {transform: translateY(150px);opacity: 0;}
+}
+
+.what.motion .right {animation-name: rightAni; animation-duration: 0.6s;}
+@keyframes rightAni {
+    0% {transform: translateX(300px);opacity: 0;}
+    30% {transform: translateX(300px);opacity: 0;}
+}
+
+.inv.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+.works .doc.motion p.img , .works .doc.motion p.left {animation-name: titAni; animation-duration: 0.8s;} 
+.works .doc.motion p.img {animation-delay: 0.2s;}
+
+.works .story.motion img {animation-name: titAni; animation-duration: 0.8s;}
+.works .story.motion img:nth-child(2) {animation-delay: 0.2s;}
+
+.works .xd.motion img {animation-name: titAni; animation-duration: 0.8s;}
+.works .xd.motion img:nth-child(2) {animation-delay: 0.2s;}
+
+.works .code.motion p.img {animation-name: titAni; animation-duration: 0.8s;}
+
+.works .result.motion {animation-name: titAni; animation-duration: 0.8s;}

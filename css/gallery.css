@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* p.num */
+.bottomBox p.num {right:-8%;top:-70px;transform:rotate(50deg);}
+.list p.num {left:-8%;top:-70px;}
+.team p.num {left:-7%;top:-80px}
+
+/* section.visual */
+.visual {width: 100%;position: relative;background: url(../img/gallery_visual.png) no-repeat top center;margin-bottom: 300px;}
+.visual .titBox {margin: 0 auto;}
+.visual .titBox .tit.enB {color:#fff;}
+.visual .titBox .tit {color:#A8A5AF}
+.visual .bottomBox {width: 100%;margin-top: 480px;position: relative;}
+.visual .bottomBox .titBox {width: 100%;height: 120px;padding-top: 0;}
+.visual .bottomBox .titBox .titinner {width: 900px;float:right;margin-right: 320px;position: relative;}
+.visual .bottomBox .titBox .tit.en {color:#000;text-align: right;}
+.visual .bottomBox .titBox .tit {color:#464646;text-align: right;}
+.visual .bottomBox .slide {position: relative;width: 1400px; margin: 100px auto 0;}
+.visual .bottomBox .slide li {overflow: hidden; width: 100%;margin-left:85px;}
+.visual .bottomBox .slide li .left {float: left; margin: 180px 0 0 150px;}
+.visual .bottomBox .slide li .left span {color:#EF3274;font-size: 30px; font-weight: bold;display: block; margin-bottom: 15px;}
+.visual .bottomBox .slide li .left p {font-size: 20px;}
+.visual .bottomBox .slide li .left p.box {font-size: 22px;font-weight: bold;margin-bottom: 20px;}
+.visual .bottomBox .slide li .right {float: right;width: 450px;
+    height:300px;margin:100px 180px 0 0;}
+.visual .bottomBox .slide li .right img {width: 100%;height: 100%;}
+
+
+
+/* arrow & dots */
+.bottomBox .slick-arrow {display: none; opacity: 0;}
+.bottomBox .slick-dots li button {position: absolute;cursor: pointer;top:150px;display: inline-block;width: 15px;height: 15px; border: none;border-radius: 50%;background: #ddd;text-indent: -9999px;}
+.bottomBox .slick-dots li:nth-child(1) button {left:237px;}
+.bottomBox .slick-dots li:nth-child(2) button {left:277px}
+.bottomBox .slick-dots li:nth-child(3) button {left:317px}
+.bottomBox .slick-dots li.slick-active button {background: #FF3579;}
+
+/* section.list */
+.list {width: 100%;height: 600px;position: relative;z-index: 2;}
+.list .titBox {width: 700px;margin-left: 320px;}
+.list .titBox .tit {text-align: left;}
+.list .circle {position: absolute;left:-18%;top:-200px;z-index: -1;width: 30%;}
+.list .circle img {width: 100%;}
+.list ul {width: 1400px;margin: 100px auto 0;}
+.list ul li a {display:block; width: 100%;height: 100%;}
+.list ul li p {text-align: center; margin-bottom: 20px; font-size: 20px;font-weight: bold;color:#5A5A5A}
+.list ul li p.plus {font-weight: normal;}
+.list ul li p.img {width: 350px;height: 350px;border-radius: 50%;overflow: hidden;margin:0 auto 50px;}
+.list ul li p.img img {width: 100%;height: 100%;}
+.list .arrow a {position: absolute; top:330px; left:10%;}
+.list .arrow a:nth-child(2) {left:88%;}
+.list .arrow a i {font-size: 23px; color: #ddd; border: 1px solid #ddd; border-radius: 50%; padding: 12px 15px 12px 12px;}
+.list .arrow a:nth-child(2) i {padding:12px 12px 12px 15px;}
+.list .slick-arrow {opacity: 1;}
+
+/* section.team */
+.team {padding-top: 1000px;box-sizing: border-box;width: 100%;background: url(../img/gallery_line.png)no-repeat center -1px; overflow: hidden;position: relative;z-index: 1;}
+.team .titBox {width: 900px;margin-left: 320px;}
+.team .titBox .tit {text-align: left;}
+.team .contentsBox {width: 1400px;margin: 50px auto 0; overflow: hidden;}
+.team .contentsBox .left {float:left; width: 30%;margin-top:300px;}
+.team .contentsBox .left p.img {width: 100%;}
+.team .contentsBox .left p.img img {width: 93%;margin-left: 50px;}
+.team .contentsBox .rightBox {float:right;width: 65%;height: 800px;position: relative;}
+.team .contentsBox .rightBox .scroll {width: 770px;height: 750px;overflow: auto;}
+.team .contentsBox .rightBox .scroll .parent {width: 100%;height: 800px;margin: 30px 0 50px 230px;}
+.team .contentsBox .rightBox .scroll .parent.xd {padding-top: 180px;box-sizing: border-box;}
+.team .contentsBox .rightBox .scroll .parent.code {padding-top: 220px;box-sizing: border-box;}
+.team .contentsBox .rightBox .scroll .parent a {display: inline-block; margin:50px 0 0 150px;}
+.team .contentsBox .rightBox .scroll .parent p {text-align: left; margin-left: 140px; font-size: 26px;font-weight: bold;}
+.team .contentsBox .rightBox .scroll .parent p.plus {margin-top: 20px; font-size: 18px;font-weight: normal;}
+.team .contentsBox .rightBox .scroll .parent p.img {width: 80%; margin:0 auto 20px;}
+.team .contentsBox .rightBox .scroll .parent p.img img {width: 80%;}
+.team .contentsBox .rightBox .scroll .parent.xd p.img img {width: 60%; margin-left: 55px;}
+.team .contentsBox .rightBox .scroll .parent.code p.img img {width: 55%; margin-left: 58px;}
+.team .contentsBox .rightBox .scroll .parent .btn {position: relative;}
+.team .contentsBox .rightBox .scroll .parent .btn p {font-size: 18px; color:#5A5A5A;margin-left: 0;letter-spacing: -1px; font-weight: normal;}
+.team .contentsBox .rightBox .scroll .parent .btn img {width: 120%;position: absolute; left:-10px;bottom:-13px;}
+.team .contentsBox .rightBox .scroll .parent .btn:hover p , .team .btn:focus p {color: #EF3274;}
+.team .scrollBar {position: absolute; width: 50%;left:22%;top:8%}
+.team .scrollBar img {width: 10%;}
+
+.scroll::-webkit-scrollbar {display: none;}
+
+
+/* contact */
+.contact {width: 100%;height: 1000px;background: url(../img/gallery_last.png) no-repeat;}
+
+
+/* animation */
+
+.visual .motion .char {
+    display: inline-block; 
+    animation: slide-up3 0.1s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(90ms * var(--char-index));}
+@keyframes slide-up3 {
+0% {transform: translateY(30px); opacity: 0;}
+30% {transform: translateY(30px); opacity: 0;}
+}
+
+.visual .bottomBox .titBox.motion {animation-delay: 0.3s;}
+
+.visual .bottomBox .slide.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+.visual .bottomBox .slide .slick-active li .left {animation-name: leftAni; animation-duration: 0.8s;}
+@keyframes leftAni {
+    0% {transform: translateX(-300px);opacity: 0;}
+    30% {transform: translateX(-300px);opacity: 0;}
+}
+
+.visual .bottomBox .slide .slick-active li .right {animation-name: rightAni; animation-duration: 0.8s;}
+@keyframes rightAni {
+    0% {opacity: 0; width: 0;}
+    30% {opacity: 0; width: 0;}
+}
+
+.scrollBar.motion {animation:scrollAni 0.8s infinite;}
+@keyframes scrollAni {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(30px);}
+}
+
+.list .clone_slide.motion {animation-name: titAni; animation-duration: 0.3s;}
+
+.team .contentsBox.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+
+
+
+/* 반응형 */
+/* 1599~1024 */
+@media screen and (max-width:1599px){
+    .list .arrow a {left:1.5%;}
+    .list .arrow a:nth-child(2) {left:95%;}
+}
+
+/* 1023 */ 
+@media screen and (max-width:1023px){
+    .visual .bottomBox .titBox .titinner {margin-right: 80px;}
+    .visual .bottomBox .slide {width: 100%;}
+    .visual .bottomBox .slide li .left {margin: 100px 0 0 0;}
+    .visual .bottomBox .slide li .right {float:left;margin: 0;margin-left: 120px;}
+    .bottomBox .slick-dots li button {top:90px;}
+    .bottomBox .slick-dots li:nth-child(1) button {left:90px;}
+.bottomBox .slick-dots li:nth-child(2) button {left:120px}
+.bottomBox .slick-dots li:nth-child(3) button {left:150px}
+.list .titBox {margin-left: 150px;}
+.list ul {width: 95%;}
+.list .arrow a {left:1%;}
+.list .arrow a:nth-child(2) {left:95%;}
+.list ul li p.img {width: 300px;height: 300px;}
+.team .titBox {margin-left: 150px;}
+.team .contentsBox {width: 95%;}
+.team .contentsBox .left p.img img {width: 100%;}
+.team .contentsBox .rightBox .scroll {width: 100%;padding-left: 70px;box-sizing: border-box;}
+.team .contentsBox .rightBox .scroll .parent {margin:0px;}
+.team .contentsBox .rightBox .scroll .parent.xd {padding-top: 50px;}
+.team .contentsBox .rightBox .scroll .parent.code {padding-top: 10px;}
+.team .contentsBox .rightBox .scroll .parent p {margin-left: 100px;}
+.team .contentsBox .rightBox .scroll .parent p.img {margin:0 auto 30px;}
+.team .contentsBox .rightBox .scroll .parent p.img img {width: 100%;}
+.team .contentsBox .rightBox .scroll .parent a {margin-left: 100px;}
+.team .contentsBox .rightBox .scroll .parent.xd p.img img {width: 80%; margin-left: 50px;}
+.team .contentsBox .rightBox .scroll .parent.code p.img img {width: 80%; margin-left: 50px;}
+.team .scrollBar {width: 8%;left:10%;top:8%}
+.team .scrollBar img {width: 100%;}
+}
+
+/* 767 */ 
+@media screen and (max-width:767px){
+    .visual {background: url(../img/gallery_visual.png) no-repeat top/contain;}
+    .visual .titBox p {font-size: 18px;}
+    .visual .bottomBox .slide li {margin-left: 0;}
+    .visual .bottomBox .slide li .left {width: 45%;margin-left: 2%;}
+    .visual .bottomBox .slide li .right {width: 50%;margin-left: 0;}
+    .visual .bottomBox .slide li .right img {width: 100%;margin-left: 0;}
+    .bottomBox .slick-dots li:nth-child(1) button {left:20px;}
+.bottomBox .slick-dots li:nth-child(2) button {left:60px}
+.bottomBox .slick-dots li:nth-child(3) button {left:100px}
+.list ul li p.img {width: 250px;height: 250px;}
+.team .contentsBox .rightBox .scroll .parent {margin-bottom: 20px;}
+.team .scrollBar {width: 8%;left:0%;top:8%}
+.team .scrollBar img {width: 100%;}
+}

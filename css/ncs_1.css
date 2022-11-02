@@ -1,0 +1,302 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+
+/* section.visual */
+.visual {width: 100%;overflow: hidden;position: relative; margin-bottom: 400px;}
+.visual .img {width: 350px;height: 180px;margin: 0 auto;}
+.visual img {width: 100%;}
+.visual a {display:inline-block;margin-bottom: 20px;}
+.visual .titBox {margin: 0 auto;}
+.visual .titBox .ko {font-size: 35px;margin-top: 15px; line-height: 1.2;}
+.visual .titBox .ko span {font-family: 'Open Sans', sans-serif;font-size: 25px;color:#EF3274;}
+
+/* .what */
+.what {width: 100%;margin: 0 auto; overflow: hidden;padding-bottom: 300px;box-sizing: border-box;position: relative;}
+.what .inner {width: 1600px; margin: 0 auto; overflow: hidden;height: 100%;}
+.what p.left {width: 200px;height: 200px;float:left; margin:0 150px 0 400px;border-radius: 50%;overflow: hidden;}
+.what p.left img {width: 200px; height: 200px;}
+.what .right {width: 30%;float:left;padding-top:40px;box-sizing: border-box;position: relative;}
+.what .right::after {content: '';width: 40px;height: 4px;background: #000;position: absolute;right:0;top:10px;}
+.what .right h3 {font-size: 30px; margin-bottom: 20px; text-align: right;}
+.what .right p {font-size: 15px;text-align: right; line-height: 1.5;}
+
+/* section.persona */
+.persona {width: 100%;position: relative; margin-top: 300px;}
+.persona .pers {width: 100%;height: 1300px;position: relative;padding-top: 200px;box-sizing: border-box;}
+.persona .persinner {width: 1400px;height: 910px;margin:auto;position: relative;overflow: hidden;}
+.persona .pers .titBox {padding-top:150px;position: relative;margin-bottom: 100px;}
+.persona .pers .titBox::before {font-size: 60px;font-family: 'Open Sans', sans-serif;position: absolute;transform: rotate(15deg);}
+.persona .pers .titBox::after {content: '';width: 40px;height: 4px;background: #000;position: absolute;}
+.persona .pers .titBox .tit {font-size: 20px; margin-bottom: 20px;}
+.persona .pers .titBox .tit.ko {font-size: 38px;}
+
+/* .dongle */
+.persona .dongle {margin-top: 200px;background: #E5E5E5;}
+.persona .dongle .persinner {background: #fff;}
+.persona .dongle .titBox {margin-left: 100px;}
+.persona .dongle .titBox::before {content: '1';left:-3%;top:25%;}
+.persona .dongle .titBox::after {left:0%;top:47%;}
+.persona .dongle .titBox .tit {text-align: left;}
+.persona .dongle .contents {width: 1400px;margin-top: 200px;}
+.persona .dongle .contents .left {width: 40%;float:left;margin-right: 100px;position: relative;}
+.persona .dongle .contents .left img {width: 50%; margin:45px 0 0 150px;}
+.persona .dongle .contents .left .talk {position: absolute;right:6%;top:-20%;width: 50%;}
+.persona .dongle .contents .left .talk img {width: 100%;}
+.persona .dongle .contents .left .talk::after {content: '';background: #fff;width:100px;height: 100px;position: absolute;right:-40%;top:40%;z-index: 1;}
+.persona .dongle .contents .left .talk::before {content: '. . .';color: #000;font-size: 50px;position: absolute;right:-23%;top:40%;}
+.persona .dongle .contents .right {width: 50%;position: relative;float:left;padding-left: 150px;box-sizing: border-box;}
+.persona .dongle .contents .right .img {position: absolute;width: 6%;right:82%;top:23%;transform: rotate(-35deg);}
+.persona .dongle .contents .right .img img {width: 100%;}
+.persona .dongle .contents .right span {font-size: 25px;}
+.persona .dongle .contents .right p.name {display: inline-block; margin:20px 40px 30px 0;}
+.persona .dongle .contents .right p.per {font-size: 15px;}
+.persona .dongle .contents .right ul {width: 450px;height: 230px; position: relative;}
+.persona .dongle .contents .right ul li {overflow: hidden;}
+.persona .dongle .contents .right ul li::before {display: none;opacity: 0;content: '';width: 200px;height: 200px;border-radius: 50%;background:#fff;
+    position: absolute;left:-350px;top:-92px; z-index: 5;}
+.persona .dongle .contents .right ul li::after {text-align: center; position: absolute; left:-332px;top:-22px;z-index: 10;}
+.persona .dongle .contents .right ul li:nth-child(1)::after {display: none;opacity: 0;content: '인터넷으로 정보를 검색하는 것쯤은 익숙해요.';width: 150px;}
+.persona .dongle .contents .right ul li:nth-child(1):hover:after , .persona .dongle .contents .right ul li:nth-child(1):hover:before {display: block;opacity: 1;}
+.persona .dongle .contents .right ul li:nth-child(2)::after {display: none;opacity: 0;content: '호텔 예약은 처음인데... 요즘은 다들 어플로 하나?';width: 160px;}
+.persona .dongle .contents .right ul li:nth-child(2):hover:after , .persona .dongle .contents .right ul li:nth-child(2):hover:before {display: block;opacity: 1;}
+.persona .dongle .contents .right ul li:nth-child(3)::after {display: none;opacity: 0;content: '인스타그램과 유튜브를 틈틈히 챙겨봐요.';width: 150px;}
+.persona .dongle .contents .right ul li:nth-child(3):hover:after , .persona .dongle .contents .right ul li:nth-child(3):hover:before {display: block;opacity: 1;}
+.persona .dongle .contents .right ul li .pink {color:#EF3274; font-weight: bold; margin-bottom: 10px;font-size: 18px; cursor: pointer;}
+.persona .dongle .contents .right ul li .bar {width: 250px;height: 15px; background: #ddd; border-radius: 10px;float: left;margin: 0 10px 15px;position: relative;}
+.persona .dongle .contents .right ul li .bar::after {content: '';width: 0px;height: 15px; background: #EF3274; border-radius: 10px;position: absolute;left:0;top:0}
+.persona .dongle .contents .right ul li:nth-child(1) .bar::after {width: 200px;}
+.persona .dongle .contents .right ul li:nth-child(2) .bar::after {width: 110px;}
+.persona .dongle .contents .right ul li:nth-child(3) .bar::after {width: 60px;}
+.persona .dongle .contents .right ul li .per {width: 10%;float:left ; line-height: 15px;}
+.persona .dongle .contents .right ul li .per.pink {margin-bottom: 0;font-size: 15px;margin-left: 15px;}
+
+/* .scenario */
+.persona .scenario .persinner {border: 1px solid #ddd;box-sizing: border-box;}
+.persona .scenario .titBox {margin-left: 100px;}
+.persona .scenario .titBox::before {content: '2';left:-4%;top:22%;}
+.persona .scenario .titBox::after {left:0%;top:47%;}
+.persona .scenario .titBox .tit {text-align: left;}
+.persona .scenario .contents {width:100%;position: relative;}
+.persona .scenario .contents p.img {width: 250px;height: 250px;float: left;margin: 150px 0 0 150px;}
+.persona .scenario .contents p.img img {width: 100%;height: 100%;}
+.persona .scenario .contents .circle {position: absolute;top:-160px;left:650px;}
+.persona .scenario .contents .circle img {width: 75%;}
+.persona .scenario .contents .txtBox {float:right;margin-right: 350px;}
+.persona .scenario .contents .txtBox p {text-align: center; margin-bottom: 20px;font-size: 20px;}
+
+/* .need */
+.persona .need {background: #E5E5E5;}
+.persona .need .persinner {background: #fff;}
+.persona .need .titBox {margin: 0 auto;}
+.persona .need .titBox::before {content: '3';left:37%;top:31%;}
+.persona .need .titBox::after {left:41%;top:58%;}
+.persona .need .circle {position: absolute; width: 80%; z-index: 1;left:26%;}
+.persona .need .circle img {width: 70%;}
+.persona .need p.img {width: 30%;margin-left: 30px;float:left;position: relative;z-index: 2;}
+.persona .need p.img img {width: 90%; margin-top: 100px;}
+.persona .need .txtBox {float:left; margin-top:90px;margin-left: 50px;}
+.persona .need .txtBox h3 {margin-bottom: 30px;font-size: 26px;text-align: center;}
+.persona .need .txtBox p {margin-bottom: 20px;font-size: 20px; text-align: center;}
+.persona .need .left {width: 50%;float:left;position: relative;height: 350px;border-right: 1px solid #ddd;box-sizing: border-box;}
+.persona .need .left p.img img {width: 83%; margin:105px 0 0 30px;}
+.persona .need .right {width: 50%;float:left;position: relative;}
+.persona .need .right .circle {left:31%}
+.persona .need .right .txtBox {margin-left:40px;}
+.persona .need .right p.img {margin-left: 67px;}
+
+/* section.observation */
+.observation {width: 100%;position: relative;}
+.observation .obs {width: 100%;height: 1300px;position: relative;padding-top: 200px;box-sizing: border-box;}
+.observation .obsinner {width: 1400px;height: 910px;margin:auto;position: relative;overflow: hidden;}
+.observation .obs .titBox {padding-top:150px;position: relative; margin-bottom: 100px;}
+.observation .obs .titBox::before {font-size: 60px;font-family: 'Open Sans', sans-serif;position: absolute;transform: rotate(15deg);}
+.observation .obs .titBox::after {content: '';width: 40px;height: 4px;background: #000;position: absolute;}
+.observation .obs .titBox .tit {font-size: 20px; margin-bottom: 20px;}
+.observation .obs .titBox .tit.ko {font-size: 38px;}
+
+/* .analy */
+.observation .analy .obsinner {border: 1px solid #ddd; box-sizing: border-box;}
+.observation .analy .titBox {margin: 0 auto 100px;}
+.observation .analy .titBox::before {content: '4';left:28%;top:30%;}
+.observation .analy .titBox::after {left:31.5%;top:58%;}
+.observation .analy .contents {width: 100%;overflow: hidden;}
+.observation .analy .left {float:left;width:50%;overflow: hidden;margin:80px 0 0 30px;}
+.observation .analy .left .topBox {width: 650px;height: 200px;margin:0px 0 70px 55px;overflow: hidden;}
+.observation .analy .left .topBox .leftTxt {float:left;position: relative;text-align: center;font-size: 25px;font-weight: bold;padding:60px 0 0 30px;box-sizing: border-box;margin-left: 50px;}
+.observation .analy .left .topBox .leftTxt::after {content: '';width: 170px;height: 170px;border-radius: 50%; background:#6881FE ;position: absolute;z-index: -1;left:14px;top:8px}
+.observation .analy .left .topBox .rightTxt {float:left; margin:50px 0 0 80px;}
+.observation .analy .left .topBox .rightTxt h3 {font-size: 28px;margin-bottom: 10px;}
+.observation .analy .left .bottomBox {width: 100%;}
+.observation .analy .left .bottomBox li {width: 33.3333%;height: 100px;;float:left;border-right: 1px solid #ddd; box-sizing: border-box;}
+.observation .analy .left .bottomBox li:last-child {border:none;}
+.observation .analy .left .bottomBox li h3 {text-align: center;font-size: 22px; margin-bottom: 25px;}
+.observation .analy .left .bottomBox li p {text-align: center;}
+.observation .analy p.right {float:right;width:45%;border-left: 1px solid #ddd;box-sizing: border-box;}
+.observation .analy p.right img {width: 100%;}
+
+/* .compar */
+.observation .compar {background: #E5E5E5;}
+.observation .compar .obsinner {background: #fff;}
+.observation .compar .titBox {margin-left:100px; width: 700px;}
+.observation .compar .titBox::before {content: '5';left:-4%;top:23%;}
+.observation .compar .titBox::after {left:0%;top:48%;}
+.observation .compar .titBox h3 {text-align: left}
+.observation .compar .titBox p {text-align: left}
+.observation .compar .contents {margin:130px 0 0 95px; overflow: hidden;}
+.observation .compar .contents .left {width: 45%;float:left;margin-right: 5%;}
+.observation .compar .contents .left img {width: 100%;}
+.observation .compar .contents .right {width: 45%;float:left}
+.observation .compar .contents .right img {width: 100%;}
+
+/* .result */
+.observation .result {margin-bottom: 300px;}
+.observation .result .obsinner {border: 1px solid #ddd; box-sizing: border-box;}
+.observation .result .titBox {margin: 0 auto 100px;}
+.observation .result .titBox::before {content: '6';left:33%;top:30%;}
+.observation .result .titBox::after {left:36.2%;top:58%;}
+.observation .result p.img {width: 60%; margin:auto}
+.observation .result p.img img {width: 100%}
+.observation .result .dongleBox {position: absolute;width: 400px;right:100px;bottom:50px;}
+.observation .result p.per {position: absolute;width: 40%;right:-10px;top:-50px;}
+.observation .result p.per img {width: 100%;}
+.observation .result p.txt {text-align: center; margin:0px 100px 0 0;}
+
+/* .contact */
+.contact {width: 100%;height:694px;position: relative; margin-top: 200px;overflow: hidden;}
+
+/* .bred */
+.bred::after {content: '01'}
+
+/* animation */
+.what.motion .left {animation-name: leftAni; animation-duration: 0.6s;}
+@keyframes leftAni {
+    0% {transform: translateY(150px);opacity: 0;}
+    30% {transform: translateY(150px);opacity: 0;}
+}
+
+.what.motion .right {animation-name: rightAni; animation-duration: 0.6s;}
+@keyframes rightAni {
+    0% {transform: translateX(300px);opacity: 0;}
+    30% {transform: translateX(300px);opacity: 0;}
+}
+
+.persona .persinner.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+.persona .dongle .contents.motion .talk::after {animation: talkAni 1.5s infinite;}
+@keyframes talkAni {
+    0% {width: 150px;}
+    100% {width: 0px;}
+}
+
+.persona .dongle ul.motion li .bar::after {animation-name: barAni; animation-duration: 0.8s;}
+@keyframes barAni {
+    0% {width: 0%; opacity: 0;}
+    30% {width: 0%; opacity: 0;}
+}
+.persona .dongle ul.motion li:nth-child(2) .bar::after {animation-delay: 0.2s;}
+.persona .dongle ul.motion li:nth-child(3) .bar::after {animation-delay: 0.4s;}
+
+.persona .dongle .left.motion {animation-name: dongleAni; animation-duration: 0.8s;}
+@keyframes dongleAni {
+    0% {transform: translateY(100px);opacity: 0;}
+    30% {transform: translateY(100px);opacity: 0;}
+}
+
+.observation .obsinner.motion {animation-name: leftAni; animation-duration: 0.8s;}
+
+.observation .result .dongleBox.motion {animation-name: upAni; animation-duration: 0.8s;}
+@keyframes upAni {
+    0% {transform: translateX(300px);opacity: 0;}
+    30% {transform: translateX(300px);opacity: 0;}
+}
+
+.ncsList.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+
+/* 반응형 */
+@media screen and (max-width:1023px){
+    .what .inner {width: 95%;}
+    .what .left {margin-left: 100px;}
+    .what .right {width: 45%;}
+    .persona .persinner {width: 90%;}
+    .persona .dongle .contents {width: 900px;height: 500px;overflow: hidden;margin-top: 100px;}
+    .persona .dongle .contents .left {margin:100px 0 0 0;width: 30%;}
+    .persona .dongle .contents .left img {width: 60%;;margin:120px 0 0 20px;}
+    .persona .dongle .contents .left .talk {width: 90%;right:-40%;top:-60%;}
+    .persona .dongle .contents .left .talk::before {right:20%;top:52%}
+    .persona .dongle .contents .left .talk::after {width: 80px;right:8%;top:52%;}
+    .persona .dongle .contents .right {float:right;padding-left: 0;margin-top: 55px;}
+    .persona .dongle .contents .right .img {width: 10%;right:100%;}
+    .persona .dongle .contents .right ul li::before {left:-250px; width: 150px;height: 150px;}
+    .persona .dongle .contents .right ul li::after  {left:-232px;}
+    .persona .scenario .contents p.img {margin-left: 30px;}
+    .persona .scenario .contents .txtBox {margin-right: 150px;}
+    .persona .scenario .contents .circle {width: 50%;left: 400px;top:-120px;}
+    .persona .scenario .contents .circle img {width: 100%;}
+    
+    .persona .pers .titBox {margin-bottom: 150px;}
+    .persona .need .circle {left:10%}
+    .persona .need .circle img {width: 100%;}
+    .persona .need .right .circle {left:10%;}
+    .persona .need p.img {margin-left: 0;}
+    .persona .need .right p.img {margin-left: 0;}
+    .persona .need .txtBox {margin-left: 10px;}
+    .persona .need .right .txtBox {margin-left: 0px;}
+    .observation .obsinner {width: 90%;}
+    .observation .analy .contents {height: 600px;}
+    .observation .analy .left {margin: 0;height: 100%;}
+    .observation .analy .left .topBox {margin: 0 auto;width: 100%;}
+    .observation .analy .left .topBox .leftTxt {width: 40%;margin-left: 0;padding:60px 0 0 0px;}
+    .observation .analy .left .topBox .leftTxt::after {left:3px;}
+    .observation .analy .left .topBox .rightTxt {width: 60%;margin-left: 0;float:right;}
+    .observation .analy .left .bottomBox li h3 {font-size: 18px;}
+    .observation .compar .contents {width: 100%;margin: 0 auto;}
+    .observation .compar .contents .left {width: 80%; margin: 0 auto 50px;float: none;}
+    .observation .compar .contents .left img {width: 100%;}
+    .observation .compar .contents .right {width: 80%;margin: 0 auto;float:none;}
+    .observation .compar {height: 1700px;}
+    .observation .compar .obsinner {height: 1350px;}
+    .observation .result p.img {width: 80%;}
+    .contact {height: 350px;}
+    .contact p.img {width: 100%;}
+    .contact p.img img {width: 100%;}
+}
+
+@media screen and (max-width:767px) {
+    .what p.left {margin:0 50px 0 0;}
+    .what .right {width: 60%;margin-top: 30px;}
+    .persona .dongle .contents {width: 95%;}
+    .persona .dongle .contents .left img {width: 100%; margin: 70px 0 0 20px;}
+    .persona .dongle .contents .left .talk {display: none;}
+    .persona .dongle .contents .right .img {display: none;}
+    .persona .dongle .contents .right ul li .pink {cursor: default;}
+    .persona .dongle .contents .right ul li:hover:after , .persona .dongle .contents .right ul li:hover:before {display: none;}
+    .persona .dongle .contents .right ul li::after {display: none;}
+.persona .dongle .contents .right ul li:nth-child(1):hover:after , .persona .dongle .contents .right ul li:nth-child(1):hover:before {display: none;opacity: 0;}
+.persona .dongle .contents .right ul li:nth-child(2):hover:after , .persona .dongle .contents .right ul li:nth-child(2):hover:before {display: none;opacity: 0;}
+.persona .dongle .contents .right ul li:nth-child(3):hover:after , .persona .dongle .contents .right ul li:nth-child(3):hover:before {display: none;opacity: 0;}
+.persona .scenario .contents p.img {width: 200px;height: 200px;margin-left: 10px;}
+.persona .scenario .contents .txtBox {margin-right: 100px;}
+.persona .scenario .contents .circle {left:230px;top:-100px;width: 60%;}
+.persona .need p.img {position: absolute;width: 30%;top:-20%;left:30%;}
+.persona .need p.img img {margin: 0;width: 110%;}
+.persona .need .right p.img {top:-25%;left:33%;}
+.persona .need .left p.img img {width: 100%;margin: 0;}
+.persona .need .circle {width: 90%;left:0;}
+.persona .need .txtBox {margin:40px 0 0 55px;}
+.persona .need .right .txtBox {margin: 40px 0 0 80px;}
+.observation .analy {height: 1650px;}
+.observation .analy .obsinner {height: 1350px;}
+.observation .analy .contents {height: 880px;}
+.observation .analy .left {height: 400px;width: 100%;margin-bottom: 50px;}
+.observation .analy p.right {width: 80%; float:none;margin: 0 auto;border: none;}
+.observation .analy .left .topBox .leftTxt::after {left:44px;}
+.observation .compar .contents .left {width: 90%;}
+.observation .compar .contents .right {width: 90%;}
+.observation .compar {height: 1600px;}
+.observation .compar .obsinner {height: 1200px;}
+.observation .result p.img {width: 90%;}
+.contact {height: 250px;}
+}

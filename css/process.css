@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* p.num */
+.brain p.num {left:-7%;top:110px;}
+.wire p.num {right:-8%;top:-60px;transform: rotate(50deg);}
+.xd p.num {left:10%;top:-80px;transform: rotate(50deg);}
+.code p.num {left:-6.5%;top:-70px}
+
+/* section.visual */
+.visual {width: 100%; height: 100vh; background: url(../img/process_light.png)no-repeat;position: relative;overflow: hidden;}
+.visual .titBox {margin:0 auto;}
+.visual p.light {position: absolute; opacity: 0;}
+.visual .imgBox {width: 1700px;height: 650px;position: absolute;right:0;}
+.visual .imgBox p.film {width: 100%;margin:20px 0 0 100px; transform: rotate(-13deg);}
+.visual .imgBox p.film img {width: 100%;}
+.visual .imgBox p.shadow {width: 95%; position: absolute; transform: rotate(2deg); right:-10%;bottom:0%;}
+.visual .imgBox p.shadow img {width: 100%;}
+.visual .imgBox p.img {position: absolute;}
+.visual .imgBox .handBox {width: 300px;height: 300px;position: absolute;top:22.2%;left:16%;}
+.visual .imgBox .handBox p.img.hand {width: 18.5%;left:56%;bottom:25%;}
+.visual .imgBox .handBox p.img.hand img {width: 100%;}
+.visual .imgBox .handBox p.img.sayhi {left:27.3%;bottom:0%; transform: rotate(-17deg);width:45%;}
+.visual .imgBox p.img.sayhi img {width: 100%;width: 100%;}
+.visual .imgBox p.img.coding {right:18.8%;top:13.8%; transform: rotate(-13.5deg);width: 11.3%;}
+.visual .imgBox p.img.coding img {width: 100%;}
+.visual .imgBox p.img.flower {left:46.2%;top:22.5%;width: 30%;}
+.visual .imgBox p.img.flower img {width: 12%;}
+
+/* div.happy */
+.happy {width: 100%;height:100vh;padding: 150px 0;box-sizing: border-box; position: relative;}
+.happy p {font-size: 100px;position: absolute;}
+.happy p.leftp {left:30%;top:30%;}
+.happy p.rightp {right:30%;bottom: 30%;}
+.happy h2 {font-size: 50px; text-align: center;margin-top: 230px;}
+.happy span {color:#FF3478;}
+
+/* section.brain */
+.brain {width: 100%;height: 1170px; background:#ddd;position: relative; margin-bottom: 500px;}
+.brain .titBox {width: 900px;padding-top:180px; margin-left: 320px;}
+.brain .tit {text-align: left;}
+.brain p.img_L {text-align: center; margin:50px auto 0; width: 80%;}
+.brain p.img_L img {width: 70%; height: 740px;}
+.brain .imgBox {width: 500px;height: 300px;position: absolute;top:8%;right:10%;}
+.brain .imgBox p.img {position: absolute;}
+.brain .imgBox p.img.per {right:9%; top:10.5%;z-index: 10; width: 74%;}
+.brain .imgBox p.img.per img {width: 100%;}
+.brain .imgBox p.img.hand {right:72%;top:66.5%;z-index: 1;width: 21.5%;}
+.brain .imgBox p.img.hand img {width: 100%;}
+.brain .imgBox p.img.foot {right:9.5%;top:42.5%;width:15%;z-index: 10;}
+.brain .imgBox p.img.foot img {width: 100%;}
+
+/* section.wire */
+.wire {width: 100%; position: relative; margin-bottom: 500px;}
+.wire .titBox {width: 100%;height: 200px;}
+.wire .titBox .titinner {width: 900px;float:right;margin-right: 320px;position: relative;}
+.wire .tit {text-align: right;}
+.wire ul {overflow: hidden; width: 1400px; margin: 100px auto 270px;}
+.wire ul li {width: 48%; float:left; margin-right: 4%;}
+.wire ul li:nth-last-child(2n) {margin-right: 0;}
+.wire ul li img {width: 100%;}
+.wire ul li:nth-child(5) {float:right;margin-right: 280px;}
+
+/* section.xd */
+.xd {width: 100%; position: relative; margin-bottom: 500px;}
+.xd .titBox {margin:0 auto 100px;}
+.xd ul {background: #FEFFEB; height: 800px; overflow: hidden; margin-bottom: 350px;}
+.xd ul li {width: 18%;float:left; margin-left: 1.9%;}
+.xd ul li:last-child {margin-right: 0;}
+.xd ul li img {width: 90%;}
+
+/* section.code */
+.code {width: 100%; position: relative; margin-bottom: 250px;}
+.code .titBox {width: 900px;margin-left: 320px;}
+.code .titBox .tit {text-align: left;}
+.code .right {width: 50%;position: absolute;right:0;top:-50px}
+.code .right img {width: 68%;}
+.code .imgBox {width: 800px;height: 400px;position: relative;}
+.code .imgBox .cod {width: 40%;margin:280px 0 0 400px; position: relative;z-index: 3;}
+.code .imgBox .cod img {width:100%;}
+.code .imgBox .img {position: absolute;}
+.code .imgBox .img.rhand {top:46%;width: 13.5%;left:58%;z-index: 5;}
+.code .imgBox .img.rhand img {width: 100%;}
+.code .imgBox .img.lhand {top:40.5%;width: 9.5%;left:59.5%;z-index: 1;}
+.code .imgBox .img.lhand img {width: 100%;}
+
+/* section.contact */
+.contact {width: 100%;height: 950px; background: url(../img/process_last.png) no-repeat center/cover; position: relative;}
+
+/* animation */
+.visual .motion .char {
+    display: inline-block; 
+    animation: slide-up3 0.1s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(40ms * var(--char-index));}
+@keyframes slide-up3 {
+0% {transform: translateY(30px); opacity: 0;}
+30% {transform: translateY(30px); opacity: 0;}
+}
+
+.visual .hand.motion {transform-origin: 0px 130px;animation: handAni 0.8s infinite;}
+@keyframes handAni {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(20deg);}
+}
+
+.visual .flower.motion img {transform-origin: 50% 50%; animation:flowerAni 2.5s linear infinite;}
+@keyframes flowerAni {
+    100% {transform: rotate(-360deg);}
+}
+
+.happy.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+.brain .hand.motion {transform-origin:110px 30px;animation: handAni2 0.8s infinite;}
+@keyframes handAni2 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(15deg);}
+}
+
+.brain .foot.motion {transform-origin: 20px 150px; animation: footAni 0.8s infinite;}
+@keyframes footAni {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(10deg);}
+}
+
+.wire ul.motion li {animation-name: titAni; animation-duration: 0.8s;}
+
+.xd .xdBox.motion li {animation-name: slideAni; animation-duration:0.5s;}
+@keyframes slideAni {
+    0% {transform: translateX(1500px);}
+    30% {transform: translateX(1500px);}
+} 
+.xd .xdBox.motion li:nth-child(2) {animation-delay: 0.1s;}
+.xd .xdBox.motion li:nth-child(3) {animation-delay: 0.2s;}
+.xd .xdBox.motion li:nth-child(4) {animation-delay: 0.3s;}
+.xd .xdBox.motion li:nth-child(5) {animation-delay: 0.4s;}
+
+.code.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+.code p.rhand.motion {transform-origin: 0px 10px;animation: shakeAni 0.5s infinite;}
+@keyframes shakeAni {
+    0% {transform: rotate(0deg);}
+    35% {transform: rotate(-10deg);}
+}
+
+.code p.lhand.motion {transform-origin: 0px 10px; animation: shakeAni2 0.5s infinite;}
+@keyframes shakeAni2 {
+    0% {transform: rotate(0deg);}
+    75% {transform: rotate(-15deg);}
+}
+
+
+
+/* 반응형 */
+/* 1599~1024 */
+@media screen and (max-width:1599px){
+    .visual .imgBox {width: 90%;}
+    .visual .imgBox p.film {margin:60px 0 0 150px;}
+    .visual .imgBox p.shadow {bottom: 10%;}
+    .visual .imgBox p.img.flower {width: 40%;left:50.5%;top:23.5%;}
+    .visual .imgBox .handBox {width: 200px;height: 200px;top:31.2%;left:21%;}
+    .visual .imgBox .handBox p.img.sayhi {width: 60%;}
+    .visual .imgBox .handBox p.img.hand {width: 28%;left:64%;bottom: 26%;}
+    .visual .imgBox p.img.coding {width: 11.5%;right:13.5%;top:17.3%;}
+}
+
+/* 1023~768 */
+@media screen and (max-width:1023px){
+    .visual {background: #000f29;}
+    .visual p.light {opacity:1;left:0; top:0%;width: 100%;height: 100vh;}
+    .visual p.light img {width: 100%;}
+    .visual .imgBox {width: 1300px;}
+    .visual .imgBox p.film {margin: 60px 0 0 450px;}
+    .visual .imgBox p.shadow {left:40%;}
+    .visual .imgBox .handBox {left:44%;top:28.7%;}
+    .visual .imgBox p.img.flower {left:74.5%;}
+    .visual .imgBox p.img.coding {display: none;}
+    .happy p.leftp {left:20%;}
+    .happy p.rightp {right:20%}
+    .brain .titBox {margin-left: 120px;}
+    .brain p.img_L img {width: 100%;}
+    .brain .imgBox {right:3%; top:13%;}
+    .wire .titBox .titinner {margin-right: 120px;}
+    .wire ul {width: 95%;}
+    .xd ul {height: 500px;}
+    .code .titBox {margin-left: 120px;}
+    .code .imgBox .cod {margin-left: 120px;}
+    .code .imgBox .img.rhand {left:23%;}
+    .code .imgBox .img.lhand {left:24.5%;}
+    .code .right {width: 65%; top:50px;right:-120px}
+}
+
+/* 767~ */
+@media screen and (max-width:767px){
+    .visual p.light {left:-13%;width: 120%;}
+    .visual .imgBox p.film {margin:100px 0 0 600px;}
+    .visual .imgBox p.shadow {left:50%;}
+    .visual .imgBox .handBox {left:55.5%;top:35.2%;}
+    .visual .imgBox p.img.flower {left:86%;top:29%;}
+    .happy p.leftp {left:10%;}
+    .happy p.rightp {right:10%;}
+    .brain .imgBox {width: 350px;height: 200px;top:20%;}
+    .brain p.img_L {width: 85%;}
+    .brain p.img_L img {height: 600px;}
+    .xd ul {height: 400px;}
+    .code .right {width: 70%;top:100px}
+    .code .imgBox .cod {margin-left: 80px;}
+}

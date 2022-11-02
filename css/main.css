@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/* p.num */
+.clone p.num {top:-70px;left:18%;}
+.team p.num {top:-70px;left:18%;}
+.process p.num {top:-80px;left:10%;}
+
+/* section.visual */
+.visual {width: 100%;background: url(../img/visual.png) no-repeat;background-position: center center;margin-bottom: 145px;position: relative;}
+.visual .titBox {margin: 0 auto;}
+.visual .handBox {position: absolute;width: 500px;height: 500px;left:50%;transform: translateX(-50%);}
+.visual .handBox .person {position: absolute; left:50%; transform: translateX(-50%);top:19%;z-index: 10;}
+.visual .handBox .perH {position: absolute;left:18.5%; z-index: 1;top:6%;}
+.visual .notebook {position: absolute; right:17%;bottom:44%}
+.visual .pen {position: absolute;left:26%;top:33%}
+.visual .about {overflow: hidden; width: 1400px; margin: 800px auto 0px;padding-bottom: 80px;box-sizing: border-box;}
+.visual .about .en {text-align:left; margin-bottom: 40px;}
+.visual .about ul {margin-bottom: 80px;overflow: hidden;}
+.visual .about ul li {float:left; width: 32%; margin-right: 2%;}
+.visual .about ul li p {text-align: center;}
+.visual .about ul li p.plus {font-size: 28px; font-weight: bold;}
+.visual .about ul li p.plus span {font-size: 19px; color:#FF3579;position: relative;}
+.visual .about ul li p.plus span::after {content: '';width: 80px;height: 1px; position: absolute;background:#ddd;left:5px;bottom:-10px;}
+.visual .about ul li:nth-child(2) p.plus span::after {left:12px;}
+.visual .about ul li:nth-child(3) p.plus span::after {left:-2px;}
+.visual .about ul li p.detail {padding-top: 25px;box-sizing: border-box;}
+.visual .about ul li:last-child {margin-right:0%;}
+.visual .about ul li p.img {width: 425px; height: 295px; margin:0 auto 30px;border-radius: 30px; overflow: hidden;}
+.visual .about ul li p.img img {width: 100%; height: 100%; transition: all 0.5s;}
+.visual .about ul li p.img img:hover {transform: scale(1.2); transition: all 0.5s;}
+.visual .moreBtn {width: 360px;margin: 100px auto 200px;position: relative;padding: 15px 0 15px 20px;box-sizing: border-box;border: 1px solid #ddd;}
+.visual .moreBtn::after {content: '';width: 0%;height: 100%;margin: 0 auto;box-sizing: border-box;;background: #FF3579;position:absolute;
+    left:0;top:0;transition: all 0.5s;}
+.visual .moreBtn a {color: #A4A4A4; display: block; width: 100%;height:100%;}
+.visual .moreBtn a span {margin-left: 70px;}
+.visual .moreBtn:focus::after, .visual .moreBtn:hover::after {background: #FF3579;width: 100%;transition: all 0.8s;z-index: -1;}
+.visual .moreBtn:focus a , .visual .moreBtn:hover a {color:#fff}
+
+
+/* section.ncs */
+.ncs {width: 100%;position: relative;}
+.ncs .titBox {margin:0 auto 150px;}
+.ncs .titBox a {display: inline-block;}
+.ncs .titBox .effect {position: absolute;}
+.ncs .titBox .click {left:17%;top:5%;}
+.ncs .titBox .click img {width: 80%;}
+.ncs .titBox .check {left:18%;top:32%;}
+.ncs .titBox .tit {color:#464646;}
+.ncs .titBox .en {font-size: 45px; color:#002C79; margin-bottom: 15px;}
+.ncs .titBox p.img {width: 50%;margin-bottom: 30px;margin: 0 auto 25px;}
+.ncs .titBox p.img img {width: 100%;}
+.ncs ul {width: 1400px;margin: 0 auto 200px; height: 200px;}
+.ncs ul li {float:left; width: 32%; margin-right: 2%; position: relative;}
+.ncs ul li:last-child {margin-right: 0%;}
+.ncs ul li p.img {width: 100%;}
+.ncs ul li p.img img {width: 70%; margin-left: 70px;}
+.ncs ul li a::after {content: '';width: 100%;height: 100%; position: absolute; background: #fff;opacity: 0;left:0;top:0;transition: 0.3s;}
+.ncs ul li a:focus:after , .ncs ul li a:hover:after {opacity: 0.5;}
+.ncs ul li a {display: block; width: 100%;height: 100%;}
+.ncs ul li p.txt {text-align: center; font-size: 18px;font-weight: bold;
+    color:#fff; position: absolute; top:42%;letter-spacing: -1.3px;z-index: 10;}
+.ncs ul li:first-child p.txt {left:37%}
+.ncs ul li:nth-child(2) p.txt {left:38%}
+.ncs ul li:last-child p.txt {left:35%}
+.ncs ul li p.txt.mob {display: none;opacity: 0;}
+.ncs .more {float:right; margin-right: 20%;}
+
+/* .middle */
+.middle {margin:500px 0 300px;position: relative;width: 100%;height: 850px;background: url(../img/middle.png) no-repeat center/cover;}
+.middle li {position: absolute;width: 40px;}
+.middle li a {display: block;width: 100%;height: 100%;}
+.middle li img {width:100%;}
+.middle li:nth-child(1) {left:5%; top:35%;}
+.middle li:nth-child(2) {left:7%; top:13%;width: 150px;opacity: 0.4;}
+.middle li:nth-child(3) {left:17%;top:25%;width: 200px;}
+.middle li:nth-child(4) {left:33%;top:23%;width: 45px;}
+.middle li:nth-child(5) {left:40%;top:32%;width: 70px;}
+.middle li:nth-child(6) {left:52%;top:1%;width: 250px;}
+.middle li:nth-child(7) {left:60%;top:36%;width:30px;}
+.middle li:nth-child(8) {left:68%;top:70%;width: 60px;}
+.middle li:nth-child(9) {left:75%;top:45%;}
+.middle li:nth-child(10) {left:81%;top:35%;width: 110px;}
+.middle li:nth-child(11) {left:88%;top:10%;width: 150px;opacity: 0.4;}
+.middle li:nth-child(12) {left:95%;top:55%;}
+
+/* section.clone */
+.clone {width: 100%;height: 2300px;background: url(../img/grayline.png) no-repeat center/cover;position: relative;}
+.clone .titBox {margin: 0 auto;}
+.clone ul {margin:115px auto 0;position: relative;width: 1500px;height: 1400px;}
+.clone li {position: absolute; overflow: hidden;}
+.clone li a {width: 100%; height: 100%; display: block;}
+.clone li .imgBox {float:left;}
+.clone li:nth-child(2) .imgBox , .clone li:last-child .imgBox {float:right}
+.clone li p.img {margin-right: 70px;position: relative; overflow: hidden;}
+.clone li p.img::before {content: 'Show Clone Site';opacity: 0; color: #000;font-size: 20px;position:absolute; top:50%;left:28%;transform: translateY(-50%); transition: all 0.3s;}
+.clone li p.img:focus:before , .clone li p.img:hover:before {opacity: 1; transition: all 0.3s; z-index: 50;}
+.clone li p.img::after {content: '';width: 100%;height: 100%;border-radius: 50%;background: #fff;position: absolute;left:0;opacity: 0; transition: all 0.3s;}
+.clone li p.img:focus:after , .clone li p.img:hover:after {opacity: 0.5; transition: all 0.3s;}
+.clone li:nth-child(2) p.img , .clone li:last-child p.img {margin-right: 0; margin-left: 70px;}
+.clone li .txtBox {float:right; color: #464646; font-weight: bold;padding: 100px 0 50px;box-sizing: border-box;}
+.clone li:nth-child(2) .txtBox , .clone li:last-child .txtBox {float:left;}
+.clone li .txtBox h3 {font-size: 31px; color:#FF3579;margin-bottom: 20px;}
+.clone li .txtBox p {line-height: 2;}
+.clone li .txtBox span {font-weight: normal;}
+.clone li:first-child {left:18%;top:3%;}
+.clone li:nth-child(2) {right:0%;top:28%;}
+.clone li:nth-child(3) {left:0%;top:45%;}
+.clone li:last-child {right:23%;top:75%}
+.clone .more {position: absolute;bottom:550px; right:480px;}
+.clone .more a {display: block;width: 100%;height:100%;}
+.clone .lineBox {width: 100%;height: 100%;position: absolute;}
+.clone .lineBox svg {position: absolute;left:45%;transform: translateX(-50%);top:18%}
+
+/* section.team */
+.team {width: 100%;height: 1000px; position: relative;margin-bottom: 260px;}
+.team .titBox {margin: 0 auto;}
+.team .renewal {opacity: 1;width: 930px;display: flex; justify-content: space-between; margin:60px auto 120px; height: 120px;}
+.team ul {width: 1400px; margin: 0 auto; height: 100%;position: relative;}
+.team ul li {float:left;position: relative;width: 32%; text-align: center;font-size: 24px; font-weight: bold;margin-right: 2%;}
+.team ul li a {display: block;width: 100%;height: 100%;}
+.team ul li:last-child {margin-right: 0;}
+.team ul li p.img {margin:50px 0 0 50px;overflow: hidden;width: 350px;height: 350px; border-radius: 50%;}
+.team ul li p.img img {width: 100%;height: 100%;}
+.team ul li a:hover p.img img , .team ul li a:focus p.img img {transform: scale(1.2); transition: all 0.4s;}
+.team .more {position: absolute;bottom:30px;right:20%}
+
+/* section.process */
+.process {width: 100%; height: 1250px;background: url(../img/port_line.png) no-repeat center/cover; position: relative; margin-bottom: 450px;}
+.process .titBox {margin: 0 auto;}
+.process ul {width: 100%;height: 100%;}
+.process ul li {position: absolute; text-align: center; font-size: 30px; font-weight: bold; color: #fff; font-family: 'Open Sans', sans-serif;}
+.process ul li a {display: block; width: 100%; height: 100px;}
+.process ul li a img {transition: all 0.3s;width: 60px;height: 60px;}
+.process ul li:first-child a img , .process ul li:last-child a img {width: 110px;height: 110px;}
+.process ul li:first-child p , .process ul li:last-child p {margin-top: 35px;}
+.process ul li:nth-child(1) {left:13%;top:33%; font-size: 34px;}
+.process ul li:nth-child(2) {left:23%;bottom:38%;}
+.process ul li:nth-child(3) {left:38%;top:43%;}
+.process ul li:nth-child(4) {left:52%;top:57%;}
+.process ul li:nth-child(5) {left:68%;top:45%;}
+.process ul li:nth-child(6) {left:80%;top:28%;}
+.process ul li:nth-child(6) p.mob {display: none;}
+.process ul li a img:focus , .process ul li a img:hover {transform: translateY(-30px);transition: all 0.3s;}
+
+/* section.contact */
+.contact {width: 100%;height: 1700px; background: url(../img/last.png) no-repeat center/cover;}
+.contact p.img {position: absolute;}
+.contact .imgBox {width: 100%;height: 750px;padding-top: 500px;position:relative;}
+.contact .imgBox .handBox {position: absolute;width: 300px;height: 300px;left:24%;top:28%;}
+.contact .imgBox .handBox p.yeni {transform: rotate(-40deg);z-index: 1;}
+.contact .imgBox .handBox p.hand {left:-15%;top:15%;}
+.contact p.circle {left:50%;transform: translateX(-50%);top:34%;z-index: 100;}
+.contact p.todo {width: 10%; left:15%;top:50%;}
+.contact p.todo img {width: 100%;}
+.contact p.note {width: 12%; right:17%;top:36%}
+.contact p.note img {width: 100%;}
+.contact p.stand {width: 18%; right:13%; top:60%;}
+.contact p.stand img {width: 100%;}
+.contact p.call {margin-top: 90px;font-size:26px;line-height:1.3;font-weight: bold; text-align: center; color: #fff;}
+
+/* animation */
+.visual .perH.motion {transform-origin: 90px 170px;animation:handAni 2s infinite;}
+@keyframes handAni {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-10deg);}
+}
+
+.visual .pen.motion {animation-name: penAni; animation-duration:1.3s;}
+@keyframes penAni {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(20deg);}
+}
+
+.visual .notebook.motion {animation-name: noteAni; animation-duration: 1.5s;}
+@keyframes noteAni {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(30px);}
+    50% {transform: translateY(-0px);}
+    75% {transform: translateY(30px);}
+    100% {transform: translateY(0px);}
+}
+.moreBtn.motion {animation-name: titAni; animation-duration:0.8s;}
+
+.about.motion {animation-name: titAni; animation-duration:0.4s;}
+.about ul.motion li {animation-name: titAni; animation-duration:0.4s;}
+.about ul.motion li:nth-child(2) {animation-delay: 0.2s;}
+.about ul.motion li:nth-child(3) {animation-delay: 0.4s;}
+
+.ncs .effectBox.motion .click {animation-name: clickAni; animation-duration: 0.8s;}
+@keyframes clickAni {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-30deg);}
+    55% {transform: rotate(20deg);}
+    75% {transform: rotate(-30deg);}
+}
+
+.ncs .effectBox.motion .check {animation-name: checkAni; animation-duration: 0.8s;}
+@keyframes checkAni {
+    0% {transform: translateX(0);}
+    30% {transform: translateX(10px);}
+    55% {transform: translateX(-10px);}
+    75% {transform: translateX(10px);}
+}
+
+
+.middle.motion li.shine {animation:shineAni 0.6s infinite;}
+@keyframes shineAni {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+}
+
+.middle.motion li.jump {animation:jumpAni 1.2s infinite;}
+@keyframes jumpAni {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+
+.middle.motion li.shake {animation: shakeAni 1.2s infinite;}
+@keyframes shakeAni {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-5deg);}
+}
+
+.clone ul.motion li {animation-name: titAni;animation-duration: 0.8s;}
+
+
+.clone .lineBox.motion svg {
+    stroke-dasharray: 3313;
+    stroke-dashoffset: 0;
+    animation: dash 1.4s linear;
+    animation-delay: 0.2s;
+     }
+
+@keyframes dash {
+  0% { stroke-dashoffset: 3313; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.team .renewal.motion li img {animation-name: reAni; animation-duration: 0.5s;}
+@keyframes reAni {
+    0% {opacity: 0;transform: rotate3d(2, -10, 0, -0.3turn);}
+}
+.team .renewal li:nth-child(2) img {animation-delay: 0.1s;}
+.team .renewal li:nth-child(3) img {animation-delay: 0.2s;}
+.team .renewal li:nth-child(4) img {animation-delay: 0.3s;}
+.team .renewal li:nth-child(5) img {animation-delay: 0.4s;}
+.team .renewal li:nth-child(6) img {animation-delay: 0.5s;}
+.team .renewal li:nth-child(7) img {animation-delay: 0.6s;}
+
+.team .teamList.motion li {animation-name: titAni; animation-duration:0.8s;}
+.team .teamList.motion li:nth-child(2) {animation-delay: 0.2s;}
+.team .teamList.motion li:nth-child(3) {animation-delay: 0.4s;}
+
+.process ul.motion li {animation-name: circleAni; animation-duration: 0.8s;}
+@keyframes circleAni {
+    0% {transform: translateY(0px);}
+    20% {transform: translateY(-100px);}
+    80% {transform: translateY(20px);}
+}
+
+.process ul.motion li:nth-child(2) {animation-delay: 0.1s;} 
+.process ul.motion li:nth-child(3) {animation-delay: 0.2s;} 
+.process ul.motion li:nth-child(4) {animation-delay: 0.3s;} 
+.process ul.motion li:nth-child(5) {animation-delay: 0.4s;} 
+.process ul.motion li:nth-child(6) {animation-delay: 0.5s;} 
+
+
+.contact .imgBox p.motion {animation-name: noteAni; animation-duration: 2.2s;}
+.contact .imgBox p.hand.motion {transform-origin: 90px 170px;animation: handAni 2s infinite;}
+.contact p.call.motion {animation-name: titAni; animation-duration: 0.4s;}
+
+
+/* 반응형 */
+/* 1599~1024px */
+@media screen and (max-width:1599px){
+    .clone p.num {left:16%}
+    .clone .more {right:300px}
+    .team p.num {left:16%;}
+    .process p.num {left:11%}
+    .process ul li:nth-child(3) {left:40%}
+    .process ul.motion li:nth-child(6) {top:35%;}
+    .contact p.note {right: 13%;}
+}
+/* 1023~768px */ 
+@media screen and (max-width:1023px){
+    .inner {width: 95%;}
+    .visual .pen {left:10%;}
+    .visual .about .en {margin-left: 30px;}
+    .visual .about {width: 100%;}
+    .visual .about ul li {width: 32%;}
+    .visual .about ul li p.img {width: 100%;height: 200px;}
+    .ncs ul {width: 90%;}
+    .ncs ul li p.img img {width: 90%; margin: 0 auto;}
+    .ncs ul li:first-child p.txt {left:21%;}
+    .ncs ul li:nth-child(2) p.txt {left:26%;}
+    .ncs ul li:last-child p.txt {left:24%;}
+    .clone .lineBox svg {width: 88%;;left:50%;top:14%;}
+    .clone ul {width: 90%;}
+    .clone li:nth-child(3) {top:53%;left:-3%;}
+    .clone .more { right:10%;}
+    .clone p.num {left:15%;}
+    .team p.num {left:15%}
+    .team ul {width: 95%;}
+    .team ul li p.img {margin: 50px auto 0; width: 280px;height: 280px;}
+    .team .more {bottom: 80px; right:10%;}
+    .process p.num {left:10%;}
+    .process ul li:nth-child(1) {left:3%}
+    .process ul li:nth-child(2) {left:10%;}
+    .process ul li:nth-child(3) {left:28%;}
+    .process ul li:nth-child(4) {left:45%;}
+    .process ul li:nth-child(5) {left:70%;}
+    .process ul li:nth-child(6) {left:83%;top:40%}
+
+    .contact .imgBox .handBox {left:10%;}
+    .contact p.note {right:10%;}
+
+    footer .logo {margin-left: 10px;}
+    footer ul {margin-left: 10px;}
+}
+
+/* 767px~ */
+@media screen and (max-width:767px) {
+    .visual .enB span {font-size: 50px;}
+    .visual p {font-size: 18px;}
+    .visual .handBox .perH {left:20.5%;top:8.5%;}
+    .visual .about ul li p.img {width: 100%;height: 180px;}
+    .visual .about ul li p.detail {display: none; opacity: 0;}
+    .ncs ul li:first-child p.txt {left:20%; display: none;opacity: 0;}
+    .ncs ul li:first-child p.txt.mob {display: block;opacity: 1;}
+    .ncs ul li:nth-child(2) p.txt {left:17%}
+    .ncs ul li:last-child p.txt {left:16%;}
+    .ncs ul {margin: 0 auto 100px;}
+    .ncs .more {margin-right: 10%;}
+
+    .clone p.num {left:0%;}
+    .clone ul {width: 100%;}
+    .clone ul li {width: 95%;}
+    .clone ul li .imgBox {width: 50%;}
+    .clone ul li p.img {width: 100%;margin-right: 0;}
+    .clone ul li p.img img {width: 100%;}
+    .clone ul li p.img::before {left:50%;transform: translate(-50%,-50%);font-size: 18px;text-align: center;}
+    .clone ul li:first-child {left:0;top:0;}
+    .clone ul li:nth-child(2) p.img , .clone li:last-child p.img {margin-left: 0px;}
+    .clone ul li:nth-child(3) {left:0;top:58%;}
+    .clone ul li:last-child {right:0;top:86%;}
+    .clone .lineBox {display: none;opacity: 0;}
+    .clone .more {right:0;bottom:20%;}
+
+    .team {width: 100%;}
+    .team p.num {left:0;}
+    .team ul li p.img {width: 200px;height: 200px;}
+    .team .renewal li img {width: 100%;}
+    .team .renewal {width: 90%;}
+    .team .more {bottom: 150px;}
+
+    .process ul li {width: 12%;}
+    .process ul li:nth-child(1) , .process ul li:nth-child(6) {width: 15%;}
+    .process ul li:nth-child(1) img , .process ul li:nth-child(6) img {width: 100%;}
+    .process ul li:nth-child(2) {left:18%;}
+    .process ul li:nth-child(3) {left:35%;}
+    .process ul li:nth-child(4) {left:50%;}
+    .process ul li:nth-child(5) {left:65%;}
+    .process ul li:nth-child(6) {left:81%;}
+    .process ul li p {font-size: 15px;}
+    .process ul li p {text-align: center;font-size: 23px;}
+
+    
+    .contact .imgBox .handBox {top:36%;left:50%;transform: translateX(-50%);}
+    .contact .imgBox .handBox p.yeni {transform: rotate(0deg);}
+    .contact .imgBox .handBox p.hand {left:-13.5%;top:-5%;transform-origin:90px 120px;}
+    .contact p.circle {width: 95%;top:50%;}
+    .contact p.circle img {width: 100%;}
+    .contact p.note {display: none;}
+    .contact p.stand {display: none;}
+    .contact p.todo {display: none;}
+
+}
+
+/* 500px~ */
+@media screen and (max-width:500px) {
+    .visual {background-position:10% 30%;}
+    .visual .pen {left:2%;}
+    .visual .notebook {right:0%;bottom:60%;width: 50%;}
+    .visual .notebook img {width: 70%;}
+    .visual .handBox .perH {top:9%;}
+    .visual .pen {display: none;}
+    .visual .notebook {display: none;}
+    .visual .about {margin-top: 750px;}
+    .visual .about ul {height: 1000px;}
+    .visual .about ul li {width: 100%;}
+    .visual .about ul li p.img {width: 50%; margin-top: 30px;}
+
+    .ncs .titBox {margin-bottom: 50px;}
+    .ncs ul {height: 600px;}
+    .ncs ul li {width: 100%;}
+    .ncs ul li p.img {width: 70%;margin: 0 0 30px 50px;}
+    .ncs ul li p.img img {width: 100%;}
+    .ncs ul li:nth-child(2) p.img {margin-left: 65px;}
+    .ncs ul li:last-child p.img {margin:32px 0 0 90px;}
+    .ncs ul li:first-child p.txt {left:36%;}
+    .ncs ul li:nth-child(2) p.txt {left:36%;}
+    .ncs ul li:last-child p.txt {left:40%;top:47%;}
+
+    .middle li:nth-child(3) {left:0;top:0;width: 150px;}
+    .middle li:nth-child(5) {top:20%;left:45%;}
+    .middle li:nth-child(6) {display: none;}
+    .middle li:nth-child(8) {width: 45px;}
+    .middle li:nth-child(9) {top:35%;}
+    .middle li:nth-child(10) {left:75%;}
+
+    .clone ul li .imgBox {width: 45%;}
+    .clone li .txtBox {padding: 50px 0 30px;}
+    .clone .more {bottom: 25%;}
+
+    .team {height: 1550px;margin-bottom: 250px;}
+    .team .renewal {margin-bottom: 50px;}
+    .team .teamList li {width: 100%;margin-bottom: 50px;}
+    .team .teamList li p.img {width: 250px;height: 250px;}
+    .team .more {bottom: 0px;}
+
+    .process {height: 900px;}
+    .process ul {margin-top: 200px;}
+    .process ul li:first-child a img , .process ul li:last-child a img {width: 70px;height: 70px;}
+    .process ul li:last-child a img {margin-left: 5px;}
+    .process ul li a img {width: 40px;height: 40px;}
+    .process ul li:nth-child(2) a , .process ul li:nth-child(3) a , .process ul li:nth-child(4) a , .process ul li:nth-child(5) a {height: 50px;}
+    .process ul li:nth-child(2) p , .process ul li:nth-child(3) p , .process ul li:nth-child(4) p , .process ul li:nth-child(5) p{display: none;margin-top: 0;font-size: 15px;}
+    .process ul li:nth-child(2):hover p , .process ul li:nth-child(3):hover p , .process ul li:nth-child(4):hover p , .process ul li:nth-child(5):hover p{display: block;}
+    .process ul li:nth-child(1) {left:0;top:43%;}
+    .process ul li:nth-child(2) {bottom:43%;left:15%;}
+    .process ul li:nth-child(3) {bottom:10%;left:32%;}
+    .process ul li:nth-child(4) {top:50%;left:50%;}
+    .process ul li:nth-child(5) {left:68%;}
+    .process ul li:first-child p, .process ul li:last-child p {margin-top: 0;font-size: 15px;}
+
+    .contact .imgBox .handBox p.yeni {width: 200px;height: 200px;left:50%;transform: translateX(-50%);top:10%;}
+    .contact .imgBox .handBox p.yeni img {width: 100%;height: 100%;}
+    .contact .imgBox .handBox p.hand {width:85px;left:5%;top:3%;}
+    .contact .imgBox .handBox p.hand img {width: 100%;}
+}
+
+/* 320px~ */
+@media screen and (max-width:390px) {
+.visual {background-position:10% 35%;}
+.visual .about ul li p.img {height: 150px;}
+
+.ncs .titBox .click {display: none;}
+.ncs ul li {margin-right: 0;}
+.ncs ul li:first-child p.txt.mob {top:40%;}
+.ncs ul li:nth-child(2) p.txt {top:35%;}
+.ncs ul li:last-child p.txt {top:48%; left:39%;}
+.ncs ul li:last-child p.img {margin:32px 0 0 70px;}
+
+.middle li:nth-child(4) {left:40%;}
+.middle li:nth-child(5) {display: none;}
+.middle li:nth-child(10) {left:70%;}
+
+.clone ul {height: 1200px;}
+.clone ul li {width: 100%;}
+.clone ul li:first-child , .clone li:nth-child(2) , .clone ul li:nth-child(3) , .clone ul li:last-child {left:0;right:0;}
+.clone ul li:nth-child(2) {top:32%;}
+.clone ul li:nth-child(3) {top:64%;}
+.clone ul li:last-child {top:96%;}
+
+.clone ul li .imgBox {width: 100%; float: none;}
+.clone ul li .imgBox p.img {width: 50%; margin: 0 auto 50px;}
+.clone li .txtBox {float:none; margin-bottom: 50px; padding: 0;}
+.clone li .txtBox h3 , .clone li .txtBox p {text-align: center;}
+.clone li:nth-child(2) .txtBox, .clone li:last-child .txtBox {float: none;}
+.clone li:nth-child(2) .imgBox, .clone li:last-child .imgBox {float:none;}
+.clone .more {bottom: 15%;}
+
+
+.process ul li:first-child , .process ul li:last-child {width: 20%;}
+.process ul li:nth-child(2) , .process ul li:nth-child(3) , .process ul li:nth-child(4) , .process ul li:nth-child(5) {width: 13%;}
+.process ul li:first-child a img, .process ul li:last-child a img {width: 60px;height: 60px;}
+.process ul li a img {width: 30px;height: 30px;}
+.process ul li:nth-child(3) {left:29%;}
+.process ul li:nth-child(4) {left:47%;}
+.process ul li:nth-child(5) {left:63%}
+.process ul li:nth-child(6) {left:77%;}
+
+.contact p.call {font-size: 20px;}
+}

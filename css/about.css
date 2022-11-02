@@ -1,0 +1,352 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* p.num */
+.logoStory p.num {top:-70px;left:33%;}
+.skill p.num {top:-70px;left:33%;}
+.story p.num {top:-70px;right:-20%; transform: rotate(40deg);}
+
+/* section.visual */
+.visual {width: 100%; height: 2000px;background: url(../img/visual_about.png) no-repeat top/cover;position: relative;}
+.visual .titBox {width: 1400px;overflow: hidden; margin: 0 auto;}
+.visual .titBox .left {float:left; margin:120px 0 0 40px;}
+.visual .titBox .left .tit {text-align: left;}
+.visual .titBox .right {float:right; position: relative;width: 300px;height: 600px;margin-top: 100px;}
+.visual .titBox .right img:nth-child(1) {position: relative;width: 100%; z-index: 10;}
+.visual .titBox .right p.img {position: absolute;}
+.visual .titBox .right p.img.hand {width: 38%;right:61%;top:19.5%;z-index: 2;}
+.visual .titBox .right p.img.ezel {width: 73%;top:-70px;left:-130px;z-index: 1;}
+.visual .bottomBox {width: 1400px;height: 600px ;margin: 300px auto 0;border-radius: 30px;background: #fff;position: relative;}
+.visual .bottomBox p.favorite {position: absolute;left:-5%;top:-10%;}
+.visual .bottomBox p.favorite img {width: 70%;}
+
+/* slide */
+.slide {width: 1400px; height: 600px; position: relative; box-shadow: -20px 20px 100px 40px rgba(0,0,0,0.03);}
+.slide li {width: 100%;height: 600px;}
+.slide li p.img {float: left;width: 40%;}
+.slide li p.img img {width: 40%; float:left;margin:180px 0 0 230px;}
+.slide li:nth-child(2) p.img img {width: 55%;}
+.slide li:nth-child(3) p.img img {width: 70%; margin-left: 180px;}
+.slide li:nth-child(4) p.img img {width: 50%;margin-top: 230px;}
+.slide li p.txt {float: right; font-size: 28px;margin: 250px 230px 0 0;}
+.slide li:nth-child(2) p.txt {margin: 250px 210px 0 0;}
+.slide li:nth-child(3) p.txt {margin: 275px 230px 0 0;}
+.slide li p.mark {width: 3%;position: absolute;right:12%;bottom:25%;}
+.slide li p.mark:nth-child(2) {left:45%;top:30%;}
+.slide li p.mark img {width: 100%;}
+
+/* arrow dots */
+.slick-arrow {text-indent: -9999px;width: 150px;height: 150px;position: absolute; bottom: 0; right: 0;cursor: pointer;border: none;background: none;}
+.slick-arrow::after {content: 'NEXT';padding:100px 0 0 30px;box-sizing: border-box;border-radius: 0px 0px 20px 0px;font-size: 25px;font-weight: bold;position: absolute;right:0px;bottom: 0px;color: #AC939E;text-indent: 0;width: 100%;height: 100%;background: url(../img/about_tri.jpg) no-repeat center/cover;}
+.slick-prev.slick-arrow {display: none;opacity: 0;}
+.slick-dots {position: absolute; right:0;top:30px;}
+.slick-dots li {position: absolute;}
+.slick-dots li button {position: absolute;top:0;display: inline-block;width: 15px;height: 15px; border: none;border-radius: 50%;background: #ddd;text-indent: -9999px;}
+.slick-dots li:nth-child(1) button {right:220px}
+.slick-dots li:nth-child(2) button {right:180px}
+.slick-dots li:nth-child(3) button {right:140px}
+.slick-dots li:nth-child(4) button {right:100px}
+.slick-dots li.slick-active button {background: #FF3579;}
+
+/* section.logoStory */
+.logoStory {width: 100%; height: 650px; position: relative; margin-top: 200px;}
+.logoStory .titBox {margin: 0 auto;}
+.logoStory .logoBox {width: 1400px;overflow: hidden; margin: 0 auto; margin-top: 130px;}
+.logoStory .logoBox .left {float: left;width: 35%;height: 350px; border-right: 1px solid #ddd;box-sizing: border-box;line-height: 350px;margin-right: 80px;}
+.logoStory .logoBox .left img {width: 55%;margin-left: 60px;}
+.logoStory .logoBox .right {float:left; margin:40px 0 0 100px;}
+.logoStory .logoBox .right p {font-size: 18px; margin-bottom: 20px;}
+.logoStory .logoBox .right p.yeni {font-size: 26px; font-weight: bold;margin-bottom: 20px;}
+
+/* section.skill */
+.skill {width: 100%;position: relative;margin-top: 380px;height: 1500px;background: url(../img/line_about.png) no-repeat bottom/cover;}
+.skill .titBox {margin: 0 auto;}
+.skill .titBox .tit {text-align: center;}
+.skill .skillBox {width: 1600px;overflow: hidden; margin: 150px auto 0;}
+.skill .skillBox .left {width: 27%; float:left; margin:0 150px 0 150px;}
+.skill .skillBox .left img {width: 100%; margin-top: 70px;}
+.skill .skillBox .right {width:600px;height:680px;float:right;margin-right: 150px;position: relative}
+.skill .skillBox .right span {font-size: 28px; color:#FF3579;font-weight: bold; margin-bottom:10px;}
+.skill .skillBox .right li {margin-bottom: 15px;position: relative;}
+.skill .skillBox .right li p.per {position: absolute; font-size: 25px; color: #878787;font-weight: bold;top:63%;}
+.skill .skillBox .right li p.per.fect {right:30px; color:#FF3579}
+.skill .skillBox .right li .gaze .bar {width: 350px;height: 15px;border-radius: 10px;background:#efefef; margin:20px 80px 20px 100px;position: relative;z-index: 1;}
+.skill .skillBox .right li .gaze .pinkBar {position: absolute;top:40px;left:1px;width: 0;height: 15px;border-radius: 10px;background: transparent; margin:20px 80px 20px 100px;z-index: 10;}
+.skill .skillBox .right li:nth-child(1) .gaze .pinkBar {width: 280px;}
+.skill .skillBox .right li:nth-child(2) .gaze .pinkBar {width: 280px;}
+.skill .skillBox .right li:nth-child(3) .gaze .pinkBar {width: 300px;}
+.skill .skillBox .right li:nth-child(4) .gaze .pinkBar {width: 230px;}
+.skill .skillBox .right li:nth-child(5) .gaze .pinkBar {width: 230px;}
+.skill .skillBox .right li:nth-child(6) .gaze .pinkBar {width: 130px;}
+.skill .skillBox .right li .gaze .pinkBar::after {content: '';opacity: 1;width: 100%;height: 15px;border-radius: 10px;background: #FF3579;position: absolute;}
+
+
+/* animate */
+.skill .skillBox .right.motion li .gaze .pinkBar::after {animation:skillbar 1.5s;}
+.skill .skillBox .right.motion li:nth-child(2) .gaze .pinkBar::after {animation-delay: 0.2s;}
+.skill .skillBox .right.motion li:nth-child(3) .gaze .pinkBar::after {animation-delay: 0.4s;}
+.skill .skillBox .right.motion li:nth-child(4) .gaze .pinkBar::after {animation-delay: 0.6s;}
+.skill .skillBox .right.motion li:nth-child(5) .gaze .pinkBar::after {animation-delay: 0.8s;}
+.skill .skillBox .right.motion li:nth-child(6) .gaze .pinkBar::after {animation-delay: 1s;}
+
+@keyframes skillbar {
+        0% {width: 0%; opacity: 0;}
+        100% {width: 100%;opacity:1;}
+    }
+
+/* .middleLine */
+.middleLine {background: url(../img/line_about2.png) no-repeat center/cover; width: 100%;height: 850px; margin:170px 0 300px;}
+
+/* section.story */
+.story {width: 100%;position: relative; height: 800px;margin-bottom: 400px;}
+.story .titBox {width: 100%;height: 120px;}
+.story .titBox .titinner {float:right;margin-right: 320px;position: relative;}
+.story .titBox .titinner .tit {text-align: right;}
+.story .pinkLine {position: absolute; width: 100%;height: 400px;left:13%;top:42%;z-index: 1;}
+.story ul {position: relative;width: 100%;height: 650px;margin-top: 100px;}
+.story ul li {position: absolute; z-index: 10;}
+.story ul li:nth-child(1) {left:10%;top:10%;}
+.story ul li:nth-child(2) {left:20%; top: 48%;}
+.story ul li:nth-child(3) {left:32%;top: 38%;}
+.story ul li:nth-child(4) {left:48%;top: 45%;}
+.story ul li:nth-child(5) {left:64%;top:20%;}
+.story ul li:nth-child(6) {right:-5%;top:55%;}
+.story ul li p.img {width: 27%;}
+.story ul li p.img img {width: 100%;}
+.story ul li:last-child p.img {width: 50%;}
+.story ul li .txtBox {position: absolute;}
+.story ul li .txtBox span {font-size: 40px; font-weight: bold; color: #002C79;}
+.story ul li:nth-child(1) .txtBox {right:20%;top:-50%;}
+.story ul li:nth-child(2) .txtBox {left:-30%}
+.story ul li:nth-child(3) .txtBox {top:-100%;left:-10%}
+.story ul li:nth-child(4) .txtBox {bottom:-95%;left:-5%}
+.story ul li:nth-child(5) .txtBox {right:20%;top:-60%}
+.story ul li:nth-child(6) .txtBox {bottom:-40%}
+
+/* section.ncs */
+.ncs {position: relative;}
+.ncs .effect {position: absolute;}
+.ncs .click {left:10%;top:7%;}
+.ncs .click img {width: 80%;}
+.ncs .check {left:13%;top:35%;}
+.ncs .titBox {margin: 0 auto;}
+.ncs .titBox .tit.en {font-size: 45px;color:#002C79;}
+.ncs .titBox a {display: inline-block;}
+.ncs .titBox p.img {width: 50%;margin-bottom: 30px;margin: 0 auto 25px;}
+.ncs .titBox p.img img {width: 100%;}
+.ncs .designBox {width: 1400px;height: 500px; margin: 0 auto;margin-top: 100px;position: relative;border: 1px solid #ddd;}
+.ncs .designBox .scrollBar {position: absolute; width: 6%; z-index: 20; left:47%;top:10%;}
+.ncs .designBox .scrollBar img {width: 50%;}
+.ncs .designBox .parent {width: 1400px;height: 400px;margin-top: 200px;}
+.ncs .designBox .parent:nth-child(1) {margin-top: 50px;}
+.ncs .designBox .parent .content {overflow: hidden;}
+.ncs .designBox .parent .left {width: 50%;float: left;}
+.ncs .designBox .parent .left a {display: block;width: 100%;height: 100%;}
+.ncs .designBox .parent .left a img {width: 80%;margin-left: 90px;}
+.ncs .designBox .parent:nth-child(2) .left img {margin-top:0;}
+.ncs .designBox .parent .right {width: 40%;float:left;margin-left: 70px;}
+.ncs .designBox .parent .right p.tit {font-size: 31px; font-weight: bold; color:#000;padding-top: 160px;box-sizing: border-box;margin-bottom: 20px;}
+.ncs .designBox .parent .right p {text-align: center; font-size: 15px;}
+.ncs .designBox .parent .right .more {margin-top: 40px;margin-left: 350px;display: inline-block;}
+.scroll::-webkit-scrollbar {display: none;}
+.scroll {width: 1400px;height: 450px;overflow-y: scroll; vertical-align: middle;}
+
+/* section.contact */
+.contact {margin-top: 200px;width: 100%; height: 750px;background: url(../img/last_about.png) no-repeat center/cover;}
+
+/* animation */
+.visual .hand.motion {transform-origin: 100px 20px;animation:handAni 1.2s infinite;}
+@keyframes handAni {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(10deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(15deg);}
+}
+
+.visual .bottomBox .slick-active p {animation-name:paperAni; animation-duration: 0.8s;}
+@keyframes paperAni {
+    0% {opacity: 0; transform: translateX(600px);}
+}
+
+.logoStory .logoBox.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+.story .pinkLine.motion svg {
+    stroke-dasharray: 1801;
+    stroke-dashoffset: 0;
+    animation: dash 1.6s linear alternate;
+    animation-delay: 0.2s;
+    }
+
+@keyframes dash {
+    0% { stroke-dashoffset: 1801; }
+    100% { stroke-dashoffset: 0; }
+}
+
+.story ul.motion li  {animation-name: titAni; animation-duration: 0.8s;}
+.story ul.motion li:nth-child(2) {animation-delay: 0.2s;}
+.story ul.motion li:nth-child(3)  {animation-delay: 0.4s;}
+.story ul.motion li:nth-child(4) {animation-delay: 0.6s;}
+.story ul.motion li:nth-child(5) {animation-delay: 0.8s;}
+.story ul.motion li:nth-child(6) {animation-delay: 1s;}
+
+.scrollBar.motion {animation:scrollAni 0.8s infinite;}
+@keyframes scrollAni {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(30px);}
+}
+
+.ncs .effectBox.motion .click {animation-name: clickAni; animation-duration: 0.8s;}
+@keyframes clickAni {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-30deg);}
+    55% {transform: rotate(20deg);}
+    75% {transform: rotate(-30deg);}
+}
+
+.ncs .effectBox.motion .check {animation-name: checkAni; animation-duration: 0.8s;}
+@keyframes checkAni {
+    0% {transform: translateX(0);}
+    30% {transform: translateX(10px);}
+    55% {transform: translateX(-10px);}
+    75% {transform: translateX(10px);}
+}
+
+
+
+/* 반응형 */
+/* 1599~1024 */
+@media screen and (max-width:1599px){
+    .visual .bottomBox p.favorite {left:0;}
+    .logoStory p.num {left:31%;}
+    .skill p.num {left:33%;}
+    .story .pinkLine {left:7%;}
+    .story ul li:nth-child(1) {left:5%;}
+    .story ul li:nth-child(6) {right:-10%;}
+    .story .pinkLine svg {width: 80%;}
+}
+
+/* 1023 */ 
+@media screen and (max-width:1023px){
+    .visual .titBox {width: 95%;}
+    .visual .bottomBox {width: 95%;}
+    .visual .slide {width: 100%;}
+    .slide li p.img {width: 100%;height: 300px; margin-bottom: 100px;}
+    .slide li p.img img {width: 20%; margin:100px 0 0 40%;}
+    .slide li:nth-child(2) p.img img {width: 20%;margin:120px 0 0 40%;}
+    .slide li:nth-child(3) p.img img {width: 40%;;margin:100px 0 0 30%;}
+    .slide li:nth-child(4) p.img img {width: 25%;margin:120px 0 0 40%;}
+    .slide li p.txt {font-size: 18px;float: none;text-align: center;font-size: 28px;margin: 0px;}
+    .slide li:nth-child(2) p.txt {margin: 0px;}
+    .slide li:nth-child(3) p.txt {margin: 0px;}
+    .slide li p.mark {width: 3%;position: absolute;right:6%;bottom:25%;}
+    .slide li p.mark:nth-child(2) {left:10%;top:68%;}
+    .logoStory .logoBox {width: 100%;}
+    .logoStory .logoBox .left {width: 20%;margin-right: 6%; margin-left: 4%;}
+    .logoStory .logoBox .left img {margin-left: 0px;width: 65%;}
+    .logoStory .logoBox .right {width: 70%; margin-left: 0;}
+    .logoStory .logoBox .right p {font-size: 15px;}
+    .skill .skillBox {width: 95%;}
+    .skill .skillBox .left {margin: 50px 0 0 0;}
+    .skill .skillBox .left img {margin-top: 95px;}
+    .skill .skillBox .right {width: 50%;margin-right: 5%;}
+    .skill .skillBox .right li .gaze .bar {width: 250px;}
+    .skill .skillBox .right li:nth-child(1) .gaze .pinkBar {width: 230px;}
+    .skill .skillBox .right li:nth-child(2) .gaze .pinkBar {width: 230px;}
+    .skill .skillBox .right li:nth-child(3) .gaze .pinkBar {width: 200px;}
+    .skill .skillBox .right li:nth-child(4) .gaze .pinkBar {width: 180px;}
+    .skill .skillBox .right li:nth-child(5) .gaze .pinkBar {width: 180px;}
+    .skill .skillBox .right li:nth-child(6) .gaze .pinkBar {width: 90px;}
+    .story .titBox .titinner {margin-right: 50px;}
+    .story p.num {right:-8%;}
+    .story ul li:nth-child(1) {top:17%;}
+    .story ul li:nth-child(1) .txtBox {right:25%;top:-130px;}
+    .story ul li:nth-child(2) {left:15%;}
+    .story ul li:nth-child(5) .txtBox {right:10%;}
+    .story ul li:nth-child(6) {right: -28%;}
+    .story ul li:last-child p.img {width: 40%;}
+    .ncs .designBox {width: 95%;}
+    .scroll {width: 95%;}
+    .ncs .designBox .parent {width: 95%;margin: 0 auto;}
+    .ncs .designBox .parent .left {width: 40%;margin-top: 30px;}
+    .ncs .designBox .parent .left img {width: 100%;margin:60px 0 0 30px;}
+    .ncs .designBox .parent .right {width: 50%;margin-left: 10%;}
+    .ncs .designBox .parent .right p.tit {font-size: 28px;}
+    .ncs .designBox .parent .right .more {margin-left: 300px;font-size: 25px;}
+    .ncs .designBox .parent:nth-child(2) .right p.tit {padding-top: 100px;}
+
+}
+
+/* 767 */ 
+@media screen and (max-width:767px){
+    .slide li p.img {width: 100%;margin-bottom: 20px;}
+    .slide li p.img img {margin:80px 0 0 50%;transform: translateX(-50%);width: 30%;}
+    .slide li:nth-child(2) p.img img {width: 35%;margin:50px 0 0 50%;}
+    .slide li:nth-child(3) p.img img {width: 50%;margin:50px 0 50px 50%;transform: translateX(-50%);}
+    .slide li:nth-child(4) p.img img {width: 35%;margin:100px 0 0 50%;}
+    .slide li p.txt {position: relative;z-index: 10;float: none;font-size: 18px;text-align: center; font-size: 28px;margin: 50px 0 0 0;}
+    .slide li:nth-child(2) p.txt {margin: 50px 0 0 0;}
+    .slide li:nth-child(3) p.txt {margin: 50px 0 0 0;}
+    .slide li p.mark {display: none;}
+    .slick-arrow {width: 100px;height: 100px;}
+    .slick-arrow::after {font-size:20px;padding:60px 0 0 30px;}
+    .slick-dots li:nth-child(1) button {right:170px}
+    .slick-dots li:nth-child(2) button {right:130px}
+    .slick-dots li:nth-child(3) button {right:90px}
+    .slick-dots li:nth-child(4) button {right:50px}
+    .logoStory {margin-top: 300px;}
+    .logoStory .logoBox .left {width: 100%;}
+    .logoStory .logoBox .left img {width: 30%;margin-left: 30%;}
+    .logoStory .logoBox .right {float: none;text-align: center;width: 100%;margin: 0;}
+    .skill .skillBox {margin-top: 50px;}
+    .skill .skillBox .left {width: 100%;margin-bottom: 100px;}
+    .skill .skillBox .left img {width: 50%;margin-left: 25%;}
+    .skill .skillBox .right {width: 90%;margin-right: 0;}
+    .skill .skillBox .right li .gaze .bar {width: 350px; background: rgb(201, 201, 201);}
+    .skill .skillBox .right li .gaze .pinkBar {top:39.9px;}
+    .skill .skillBox .right li:nth-child(1) .gaze .pinkBar {width: 330px;}
+    .skill .skillBox .right li:nth-child(2) .gaze .pinkBar {width: 330px;}
+    .skill .skillBox .right li:nth-child(3) .gaze .pinkBar {width: 300px;}
+    .skill .skillBox .right li:nth-child(4) .gaze .pinkBar {width: 280px;}
+    .skill .skillBox .right li:nth-child(5) .gaze .pinkBar {width: 280px;}
+    .skill .skillBox .right li:nth-child(6) .gaze .pinkBar {width: 150px;}
+    .story {height: 1300px;}
+    .story svg {display: none;}
+    .story ul {height: 1100px;width: 100%;}
+    .story ul::after {content: '';width: 3px;height: 1000px;position: absolute;background: #ddd;left:50%;transform: translateX(-50%);top:0;}
+    .story ul li {width: 100%;height: 250px;}
+    .story ul li::after {content: '';width: 10px;height: 10px;background: #002C79;border-radius: 50%;position: absolute;left:50%;transform: translateX(-50%);}
+    .story ul li:nth-child(6)::after {display: none;}
+    .story ul li:nth-child(1) {left:0%;top:0%;}
+    .story ul li:nth-child(2) {left:0%;top:20%;}
+    .story ul li:nth-child(3) {left:0%;top:40%;}
+    .story ul li:nth-child(4) {left:0%;top:60%;}
+    .story ul li:nth-child(5) {left:0%;top:80%;}
+    .story ul li:nth-child(6) {right:0%;top:100%;}
+
+    .story ul li p.img {position: absolute;}
+    .story ul li:nth-child(2) p.img , .story ul li:nth-child(3) p.img {width: 25%;}
+    .story ul li:nth-child(1) p.img {left:22%;width: 20%;}
+    .story ul li:nth-child(2) p.img {left:60%;top:-20%;width: 19%;}
+    .story ul li:nth-child(3) p.img {left:23%;width: 18%;}
+    .story ul li:nth-child(4) p.img {left:56%;top:-5%;width: 27%;}
+    .story ul li:nth-child(5) p.img {left:20%;width: 23%;}
+    .story ul li:nth-child(6) p.img {left:50%;}
+
+    
+    .story ul li:nth-child(1) .txtBox {right:20%;top:-20px;}
+    .story ul li:nth-child(2) .txtBox {left:15%;top:-15px;}
+    .story ul li:nth-child(3) .txtBox {left:54%;top:-20px;}
+    .story ul li:nth-child(4) .txtBox {left:9%;top:-20px;}
+    .story ul li:nth-child(5) .txtBox {left:54%;top:-20px;}
+    .story ul li:nth-child(6) .txtBox {left:10%;top:50px;}
+
+    .ncs .designBox .parent {height: 400px;}
+    .ncs .parent .content {height: 100%;}
+    .ncs .designBox .parent .left {width: 100%;float: none;margin-bottom: 50px;}
+    .ncs .designBox .parent .left img {width: 100%; margin:0;}
+    .ncs .designBox .parent .right {display: none;}
+    .ncs .designBox .scrollBar {position: absolute; width: 100px; z-index: 20; left:5%;top:10%;}
+.ncs .designBox .scrollBar img {width: 50%;}
+    
+}

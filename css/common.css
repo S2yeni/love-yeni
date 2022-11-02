@@ -1,0 +1,255 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* 공통부분 */
+.wrap {font-family: 'Noto Sans KR', sans-serif; font-size: 15px; position: relative;margin: auto; width: 100%; overflow: hidden;}
+.titBox {width: 800px;position: relative;}
+.tit {line-height: 1.3;text-align: center; font-size: 22px; color:#464646;position: relative;z-index: 10;}
+.en {font-family: 'Open Sans', sans-serif;margin-bottom: 20px;line-height: 1; font-size:60px; color:#000}
+.enB {font-family: 'Open Sans', sans-serif;margin-bottom: 20px;line-height: 1.2; font-size:60px; color:#000}
+.ko {font-size: 60px;margin-bottom: 20px;line-height: 1; color:#000}
+.inner {width: 100%;margin: auto; height: 100%;position: relative;}
+
+/* .more */
+.more {font-size: 26px; font-family: 'Open Sans', sans-serif; color:#979797; transition: all 0.5s;}
+.more:hover , .more:focus {color: #FF3579; transition: all 0.5s;}
+
+/* .visual */ 
+.visual .titBox {padding-top: 180px;}
+
+/* p.num */
+p.num {position: absolute; z-index: 1;}
+
+/* header */
+header {width: 100%; height: 90px;padding: 0 150px; box-sizing: border-box; line-height: 90px;position: fixed; z-index:900; transition: all 0.3s;}
+.innerHeader {width: 100%;height: 100%;}
+.innerHeader h1 {width: 50px;height: 50px; float:left; position: relative; z-index: 100;}
+.innerHeader h1 a {display: block; width: 100%;height: 100%;}
+.innerHeader h1 img {width: 100%;}
+.innerHeader .menuBar {float:right; font-size: 35px; color: #ddd;}
+
+/* fixheader */
+header:before {content: ''; width: 100%;height: 0%;background: #fff; border-bottom: 1px solid #ddd;position: absolute; top:0;left:0; transition: all 0.3s; z-index: 99;}
+header.on:before {height: 100%; transition: all 0.5s;} 
+
+/* .menuOpen */
+.menuOpen .open {position: fixed; right:150px;top:20px;color:#ddd;font-size: 35px; z-index: 1000;}
+
+/* .menuWrap */
+.menuWrap {width: 100%; height: 100vh; background:#fff;position: fixed; top:0;right:0;z-index: 1000;}
+.menuWrap p.menuBg {position: fixed;bottom:0;}
+.menuWrap ul {position: absolute; top:20%;left:50%; transform: translateX(-50%);font-size:60px;font-weight: bold;}
+.menuWrap ul li {position: relative;}
+.menuWrap ul li:focus:after , .menuWrap ul li:hover::after {content: '';width: 35px;height: 35px;border-radius: 50%;background: #FF3579;position:absolute;left:-20px;z-index: 1;}
+.menuWrap ul li a {margin-bottom: 40px;display: inline-block; position: relative; z-index: 2;}
+.menuWrap ul li a:focus , .menuWrap ul li a:hover {transition: all 0.2s; color: #FF3579;}
+.menuWrap .close {position: absolute; display: none;}
+
+.menuWrap ul li:nth-child(2) > a , .menuWrap ul li:nth-child(3) > a {margin-bottom: 0;}
+.menuWrap .inner {line-height: 0; opacity: 0;}
+.menuWrap .inner a {font-size: 40px;}
+.menuWrap ul li:nth-child(2):hover .inner , .menuWrap ul li:nth-child(2):focus .inner {opacity: 1;line-height: 40px; transition: all 0.5s;}
+.menuWrap ul li:nth-child(3):hover .inner , .menuWrap ul li:nth-child(3):focus .inner {opacity: 1;line-height: 40px; transition: all 0.5s;}
+.menuWrap ul li:nth-child(2)::after , .menuWrap ul li:nth-child(3)::after {top:0;}
+
+/* .menuOpen 클릭x */
+.menuWrap {width: 0; opacity: 0; transition: 0s;}
+.menuWrap p.menuBg {width: 0; opacity: 0;}
+.menuWrap.on {width: 100%;opacity: 1; transition: all 0.5s;}
+.menuWrap.on p.menuBg {width: 100%;opacity: 1; transition: all 0.5s;}
+.menuWrap ul {display: none;}
+.menuWrap.on ul {display: block;}
+.menuWrap.on .close {display: block;color:#ddd;font-size: 35px; right:150px;top:20px}
+
+/* .contact */
+.contact {position: relative;}
+.contact .ctc {width: 40%;height: 150px;position: absolute;left:50%;transform: translateX(-50%);bottom:5%;}
+.contact .ctc img {width: 100%;}
+
+/* .ncsMore */
+.ncsMore .moretxt {text-align: left; margin-left: 300px;position: relative;}
+.ncsMore .moretxt::after {content: '';width: 40px;height: 4px;background: #000;position: absolute;left:0;top:-13px}
+.ncsMore .ncsList {width: 1300px;height: 500px;position: relative; margin: 100px auto 0;}
+.ncsMore .ncsList li p.left {float:left; width: 40%; margin-right: 120px;}
+.ncsMore .ncsList li p.left img {width: 100%;}
+.ncsMore .ncsList li .right {width: 50%;float:left; padding:50px 0 0 65px;box-sizing: border-box;}
+.ncsMore .ncsList li .right .tit {text-align:left;margin-bottom: 20px;}
+.ncsMore .ncsList li .right .tit.ko {letter-spacing: -3px;font-size: 45px;}
+.ncsMore .ncsList li .right .btn {margin-top: 50px;width: 250px;height: 65px;background: url(../img/more_circle.png) no-repeat;background-size:130px;}
+.ncsMore .ncsList li .right .btn a {display: inline-block;font-size: 18px;color:#464646; transition: all 0.8s;line-height: 58px;margin-left: 14px;}
+.ncsMore .ncsList li .right .btn a:hover {color:#FF3579; transition: all 0.8s;}
+
+/* arrow & dots */
+.ncsMore .slick-arrow {display: none; opacity: 0;}
+.ncsMore .slick-dots {position: absolute;width: 300px;height: 100px;top:0;right:30%;}
+.ncsMore .slick-dots li button {cursor: pointer;position: absolute;top:0px;display: inline-block;width: 15px;height: 15px; border: none;border-radius: 50%;background: #ddd;text-indent: -9999px;}
+.ncsMore .slick-dots li:nth-child(1) button {left:97px;}
+.ncsMore .slick-dots li:nth-child(2) button {left:132px}
+.ncsMore .slick-dots li:nth-child(3) button {left:167px}
+.ncsMore .slick-dots li:nth-child(4) button {left:202px}
+.ncsMore .slick-dots li:nth-child(5) button {left:237px}
+.ncsMore .slick-dots li:nth-child(6) button {left:272px}
+.ncsMore .slick-dots li.slick-active button {background: #FF3579;}
+
+
+/* footer */
+footer {width: 100%;background: #000;height: 210px; overflow: hidden;}
+footer .logo {display: inline-block;float:left;line-height: 210px;margin-left: 250px;}
+footer .logo img {width: 50px;height: 50px;}
+footer ul {float:left;margin-left: 130px;line-height: 210px; color: #fff;}
+footer ul li {float:left; margin-right: 80px;}
+footer ul li span {margin-right: 10px;}
+
+/* topBtn */
+.topBtn {width: 76px;height: 76px;position: absolute;bottom: 60px;right:5%;background:#FF3579; border-radius: 50%; text-align: center;line-height: 76px;font-size: 25px; font-weight: bold;color: #fff;}
+
+/* .bred */
+.bred {position: fixed; left:-100px;top:50%;transform: translateY(-50%);z-index: 100; width: 150px;height: 150px;background: #FF3579;border-radius: 50%;opacity: 0;}
+.bred.on {opacity: 1;}
+.bred::after {position: absolute;left:120px;top:50%;transform: translateY(-50%);font-size: 17px;font-weight: bold;}
+.bred:hover:after , .bred:focus:after {display: none;}
+.bred:hover , .bred:focus {left:-70px;transition: all 0.3s;}
+.bred:hover p , .bred:focus p {opacity: 1;}
+.bred li {position: relative;width: 150px;height: 10px;}
+.bred li p {position: absolute;left:75px;opacity: 0;}
+.bred li:nth-child(1) p {top:3px;}
+.bred li:nth-child(2) p {left:105px;top:-10px;}
+.bred li:nth-child(3) p {left:125px;top:-15px;}
+.bred li:nth-child(4) p {left:125px;top:-10px;}
+.bred li:nth-child(5) p {left:105px;top:-10px;}
+.bred li:nth-child(6) p {top:-23px;}
+.bred li .go {display: none; position: absolute;width: 300px;left:150px;top:0;}
+.bred li {margin-bottom: 20px;letter-spacing: -1px;}
+.bred li:hover , .bred li:focus {color:#fff;font-size: 17px;letter-spacing: 1px;font-weight: bold;}
+.bred li:hover .go , .bred li:focus .go {display: block; color:#000;}
+.bred li:nth-child(1):hover .go , .bred li:nth-child(1):focus .go {left:140px;}
+.bred li:nth-child(2):hover .go , .bred li:nth-child(2):focus .go {left:160px;}
+.bred li:nth-child(3):hover .go , .bred li:nth-child(3):focus .go {left:170px;}
+.bred li:nth-child(4):hover .go , .bred li:nth-child(4):focus .go {left:170px;}
+.bred li:nth-child(5):hover .go , .bred li:nth-child(5):focus .go {left:160px;}
+.bred li:nth-child(6):hover .go , .bred li:nth-child(6):focus .go {left:140px;}
+
+/* animation */
+.tit.motion {animation-name: titAni; animation-duration: 0.4s;}
+@keyframes titAni {
+    0% {opacity: 0; transform: translateY(100px);}
+    40% {opacity: 0; transform: translateY(100px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+.titBox.motion {animation-name: titAni; animation-duration: 0.4s;}
+.tit span {font-weight: bold;}
+
+.titBox.motion::after {animation-name: afterAni; animation-duration: 0.8s;}
+@keyframes afterAni {
+    0% {opacity: 0;}
+}
+
+.more.motion {animation-name: noteAni; animation-duration: 0.8s;}
+
+.motion .char {
+    display: inline-block; 
+    animation: slide-up2 0.1s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(45ms * var(--char-index));}
+@keyframes slide-up2 {
+0% {transform: translateY(30px); opacity: 0;}
+30% {transform: translateY(30px); opacity: 0;}
+}
+
+
+.topBtn.motion:hover , .topBtn.motion:focus {animation-name: topAni; animation-duration: 0.8s;}
+@keyframes topAni {
+    0% {transform: translateY(-10px);}
+    35% {transform: translateY(0px);}
+    70% {transform: translateY(-20px);}
+}
+
+
+/* 반응형 */
+@media screen and (max-width:1023px){
+    .ncsMore .moretxt {margin-left: 85px;}
+    .ncsMore .ncsList {width: 95%;}
+    .ncsMore .ncsList li p.left {width: 45%;margin:40px 40px 0 0;}
+    .ncsMore .ncsList li .right {width: 50%;;padding-left: 0px;float:right;}
+    .ncsMore .ncsList li .right .tit.ko {font-size: 35px;}
+    .ncsMore .ncsList li .right .tit {font-size: 18px;}
+    .ncsMore .ncsList li .right .btn {background-size: 120px;}
+    .ncsMore .ncsList li .right .btn a {font-size: 17px;line-height: 55px;margin-left: 12px;}
+    .ncsMore .slick-dots li:nth-child(1) button {left:117px;}
+    .ncsMore .slick-dots li:nth-child(2) button {left:152px}
+    .ncsMore .slick-dots li:nth-child(3) button {left:187px}
+    .ncsMore .slick-dots li:nth-child(4) button {left:222px}
+    .ncsMore .slick-dots li:nth-child(5) button {left:257px}
+    .ncsMore .slick-dots li:nth-child(6) button {left:292px}
+
+    .contact .ctc {width: 60%;}
+    .contact .ctc.etcctc {bottom: 0%;}
+    footer .logo {margin-left: 50px;}
+    footer ul {width: 500px;line-height: 1.6;margin-top: 66px;}
+    footer ul li {width: 100%;margin-right: 0;}
+}
+
+
+
+/* 767px */
+@media screen and (max-width:767px) {
+    .menuWrap.on .close {right:50px;}
+    header {padding:0 0px;}
+    header .logo {margin-left: 50px;}
+    .menuOpen .open {right:50px;}
+    .titBox {width: 500px;}
+    .visual .titBox {width: 600px;padding-top: 70px;}
+
+    .ncsMore .ncsList {height: 800px;}
+    .ncsMore .moretxt {margin-left: 50px;}
+    .ncsMore .ncsList li p.left {width: 70%;margin-left:107px;}
+    .ncsMore .ncsList li .right {width: 100%;}
+    .ncsMore .ncsList li .right span {display: block;text-align: center;}
+    .ncsMore .ncsList li .right .tit {text-align: center;}
+    .ncsMore .ncsList li .right .tit.ko {font-size: 38px;}
+    .ncsMore .ncsList li .right p {text-align: center;}
+    .ncsMore .ncsList li .right .btn {margin: 50px auto 0; width: 122px;}
+    .ncsMore .slick-dots li button {top:450px;}
+    .ncsMore .slick-dots li:nth-child(1) button {left:67px;}
+    .ncsMore .slick-dots li:nth-child(2) button {left:102px}
+    .ncsMore .slick-dots li:nth-child(3) button {left:137px}
+    .ncsMore .slick-dots li:nth-child(4) button {left:172px}
+    .ncsMore .slick-dots li:nth-child(5) button {left:207px}
+    .ncsMore .slick-dots li:nth-child(6) button {left:242px}
+
+    footer .logo {margin-left: 50px;}
+    .topBtn {width: 50px;height: 50px; font-size: 20px;line-height: 50px;bottom: 75px;}
+    footer ul {width: 300px;line-height: 1.6;margin-top: 66px;}
+    footer ul li {width: 100%;margin-right: 0;}
+    .contact .ctc {width: 70%;}
+    .contact .ctc.etcctc {bottom: -3%;}
+}
+
+/* 500px~ */
+@media screen and (max-width:500px) {
+    .contact .ctc {width: 80%;bottom:0;}
+
+}
+
+/* 320px~ */
+@media screen and (max-width:390px) {
+    .titBox {width: 300px;}
+    .tit.ko , .tit.en {font-size: 40px;}
+    .tit {font-size: 18px;}
+    p.num {width: 80px;}
+    p.num img {width: 100%;}
+    
+}

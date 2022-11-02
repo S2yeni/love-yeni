@@ -1,0 +1,284 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* p.num */
+.step_o p.num {right:-9%;top:-80px}
+.step_tw p.num {left:-7%;top:20px;}
+.step_th p.num {left:25%;top:30px}
+.step_fo p.num {right:-12%;top:-80px}
+.step_fi p.num {left:33%;top:30px;}
+.step_s p.num {left:-6%;top:15px;}
+
+/* section.visual */
+.visual {width: 100%;position: relative;}
+.visual .titBox {margin: 0 auto;}
+.visual .renewal {opacity: 1;width: 930px;display: flex; justify-content: space-between; margin:50px auto 60px; height: 120px;}
+.visual p.img {text-align: center;margin-top: 60px;}
+.visual .bottomBox {width: 1080px;overflow: hidden;margin: 150px auto 0;}
+.visual .bottomBox p.left {float:left;width: 395px;height: 395px;;border-radius: 50%;overflow: hidden;margin-left: 80px;position: relative;}
+.visual .bottomBox p.left img {width:100%;height: 100%;}
+.visual .bottomBox p.left::after {content: '';width: 400px;height: 400px;background: #fff;position: absolute;left:0;top:0;transform: translateX(-500px);}
+.visual .bottomBox .right {float:left;margin:60px 0 0 100px;}
+.visual .bottomBox .right h2 {font-size: 30px; margin-bottom: 30px;text-align: right;}
+.visual .bottomBox .right p {margin-bottom: 30px;text-align: right; color:#464646}
+
+/* .go */
+.go {width: 100%;height:400px;margin:340px 0 300px 0;position: relative;overflow: hidden;}
+.go .inner {width: 1080px;}
+.go p {text-align: center;}
+.go .left {float: left;width: 40%;}
+.go .left p.img {width: 100%; margin-top:80px;}
+.go .left p.img img {width: 90%;}
+.go span {position: absolute; left:49%;top:40%;font-size: 100px;color: #ddd;}
+.go .right {float:right;width: 40%;position: relative;}
+.go .right .img {width: 300px;height: 300px;border: 1px solid #ddd; border-radius: 50%;margin:50px 0 0 65px;}
+.go .right .img p {font-size: 100px; color:#464646;line-height: 300px;}
+.go .right .goTxt {position: absolute; width: 40%;right:-3%;bottom:10%;}
+.go .right .goTxt img {width: 100%;}
+.go .right .txt {text-align: right;}
+
+/* section.process */
+.process {width: 100%;position: relative; background: url(../img/team_line.png) no-repeat top center;overflow: hidden;}
+.process .tit.big {font-size: 45px; font-weight: bold; color:#000;margin-bottom: 20px;}
+.process .stepNum {position: absolute; opacity: 0.4;}
+
+/* .step_o */
+.process .step_o {width: 100%;overflow: hidden;position: relative; margin: 0 auto 300px;}
+.process .step_o .stepNum {right:13%;top:33%;}
+.process .step_o .titBox {padding-top: 500px; width: 100%;height: 400px;}
+.process .step_o .titBox .titinner {width: 700px;float:right;margin-right: 320px;position: relative;}
+.process .step_o .titBox .tit {text-align: right;}
+.process .step_o .titBox .bottom {margin-top: 50px;}
+.process .step_o .titBox .bottom p {text-align: right; margin-bottom: 20px;line-height: 1.5;}
+.process .step_o .img {margin: 0 auto;width: 70%;}
+.process .step_o .img img {width: 100%;}
+
+/* .step.tw */
+.process .step_tw {width: 100%;height: 900px;position: relative;margin:0 auto 300px;}
+.process .step_tw .stepNum {left:13%; top:0;}
+.process .step_tw .titBox {padding-top: 100px; margin: 0 0 10px 320px;}
+.process .step_tw .tit {text-align: left;}
+.process .step_tw .left {float:left; margin:80px 0 0 320px;}
+.process .step_tw .left p {margin-bottom: 30px;}
+.process .step_tw p.right {position: absolute;width: 30%; right:12%;top:50px;}
+.process .step_tw p.right img {width: 60%;margin-left: 100px;}
+
+/* .step.th */
+.process .step_th {width: 100%;position: relative;margin-bottom:500px;}
+.process .step_th .stepNum {left:40%; top:-20px;}
+.process .step_th .titBox {padding-top: 100px; margin: 0 auto; width: 800px;}
+.process .step_th ul {width: 1400px;overflow: hidden;margin: 150px auto 0;}
+.process .step_th ul li {float:left;width: 50%;margin-bottom: 30px;}
+.process .step_th ul li img {width: 100%;}
+
+/* .step.fo */
+.process .step_fo {width: 100%;position: relative;margin-bottom: 500px;;}
+.process .lineBox {position: absolute; width: 100%;height: 1100px;}
+.process .lineBox svg {position: absolute;}
+.process .lineBox svg:nth-child(1) {left:31.5%;top:175px;}
+.process .lineBox svg:nth-child(2) {right:32%;top:600px;}
+.process .lineBox svg:nth-child(3) {left:32%;top:1010px;}
+.process .step_fo .stepNum {right:13%;top:0;}
+.process .step_fo .titBox {padding-top: 100px;height: 120px;width: 100%;}
+.process .step_fo .titBox .titinner {float:right;margin-right: 320px;position: relative;}
+.process .step_fo .titBox .tit {text-align: right;}
+.process .step_fo ul {position: relative;width: 1400px;height: 1200px;margin: 0 auto;overflow: hidden;}
+.process .step_fo ul li {position: absolute;}
+.process .step_fo ul li p.img {float:left;width: 324px;height: 324px;border-radius: 50%; line-height: 324px;}
+.process .step_fo ul li:nth-child(2) p.img {float:right;}
+.process .step_fo ul li p.img img {margin-left: 32px;}
+.process .step_fo ul li:nth-child(1) p.img {border: 3px solid #FDFFC9;}
+.process .step_fo ul li:nth-child(2) p.img {border: 3px solid #D8FFF8;}
+.process .step_fo ul li:nth-child(3) p.img {border: 3px solid #F8D9FF}
+.process .step_fo ul li:nth-child(1) {left:0px;top:150px}
+.process .step_fo ul li:nth-child(2) {right:0px; top:400px}
+.process .step_fo ul li:nth-child(3) {left:0px;top:850px}
+.process .step_fo ul li .topTxt {float:left;margin-left: 300px;}
+.process .step_fo ul li:nth-child(2) .topTxt {float:left; margin:255px 280px 0 0;}
+.process .step_fo ul li:nth-child(3) .topTxt {margin-top: 220px;}
+.process .step_fo ul li h3 {font-size: 31px; color:#EF3274;margin-bottom: 15px;}
+.process .step_fo ul li p {font-size: 18px; color:#464646;font-weight: bold;}
+.process .step_fo ul li p span {font-size: 15px; color:#464646;font-weight: normal;}
+
+/* .step.fi */
+.process .step_fi {width: 100%;position: relative; margin-bottom: 500px;}
+.process .step_fi .stepNum {left:43%;top:-1%;}
+.process .step_fi .titBox {padding-top: 100px;margin:0 auto 130px;}
+.process .step_fi ul {width: 100%; height: 670px;overflow: hidden;}
+.process .step_fi ul li {width: 18%; float:left;margin-left: 1.6%;}
+.process .step_fi ul li img {width: 100%;}
+
+/* .step.s */
+.process .step_s {width: 100%;position: relative; overflow: hidden; height: 600px;margin-bottom: 300px;}
+.process .step_s .stepNum {left:-50px;top:0px;}
+.process .step_s .titBox {padding-top: 100px; margin-bottom:65px;}
+.process .step_s .tit {text-align: left; margin-left:320px;}
+.process .step_s p {margin:0 0 30px 320px;}
+.process .step_s p.img {position: absolute;top:100px; right:20%;}
+.process .step_s p.img img {width: 560px;height: 436px;}
+
+/* .done */
+.process .done {width: 450px;height: 500px; margin: 0 auto;padding-top: 200px;box-sizing: border-box;position: relative;}
+.process .done .btn {margin-left: 167px;width: 300px;height: 55px;background: url(../img/more_circle.png) no-repeat ;background-size:110px;}
+.process .done .btn a {font-size: 20px; color: #464646; margin-left: 21px;line-height: 49px;}
+.process .done p {text-align: center; margin-top: 10px;}
+.process .done ul {width: 100%;height: 200px;position: relative;}
+.process .done ul li {width: 32%;position: absolute;}
+.process .done ul li img {width: 100%;}
+.process .done ul li:nth-child(1) {left:140px;top:140px;}   
+.process .done ul li:nth-child(2) {left:0;top:60px;}
+.process .done ul li:nth-child(3) {right:0;top:50px;}
+
+
+/* .contact */
+.contact {width: 100%;height: 1100px;background: #FFFDF8; margin-top: 100px;position: relative;overflow: hidden;}
+.contact p {text-align: center; font-size:50px;color:#3A383E;font-weight: bold; letter-spacing: -1px; padding-top: 259px;}
+.contact p.img {padding-top:0; margin-top: 60px;}
+
+
+/* animation */
+.visual .renewal.motion li img {animation-name: reAni; animation-duration: 0.5s;}
+@keyframes reAni {
+    0% {opacity: 0;transform: rotate3d(2, -10, 0, -0.3turn);}
+}
+.visual .renewal li:nth-child(2) img {animation-delay: 0.1s;}
+.visual .renewal li:nth-child(3) img {animation-delay: 0.2s;}
+.visual .renewal li:nth-child(4) img {animation-delay: 0.3s;}
+.visual .renewal li:nth-child(5) img {animation-delay: 0.4s;}
+.visual .renewal li:nth-child(6) img {animation-delay: 0.5s;}
+.visual .renewal li:nth-child(7) img {animation-delay: 0.6s;}
+
+.visual .bottomBox.motion p.left::after {animation-name: aftAni; animation-duration: 0.8s;}
+@keyframes aftAni {
+    0% {transform: translateX(0px);}
+    30% {transform: translateX(0px);}
+}
+
+
+.go .right.motion {animation-name: rightAni; animation-duration: 0.8s;}
+@keyframes rightAni {
+    0% {transform: translateX(300px); opacity: 0;}
+    30% {transform: translateX(300px); opacity: 0;}
+}
+
+.go .right.motion .goTxt {animation-name: goAni; animation-duration:0.8s; animation-delay: 0.8s;}
+@keyframes goAni {
+    0% {transform: translateY(0px);}
+    30% {transform: translateY(-50px);}
+    50% {transform: translateY(0px);}
+    80% {transform: translateY(-30px);}
+}
+
+.lineBox.motion svg {stroke-dasharray: 300;
+    stroke-dashoffset: 0;
+    animation: dash 0.8s linear alternate;}
+@keyframes dash {
+  0% { stroke-dashoffset: 300; }
+  100% { stroke-dashoffset: 0; }
+}
+.lineBox.motion svg:nth-child(2) {animation-delay: 0.4s;}
+.lineBox.motion svg:nth-child(3) {animation-delay: 0.8s;}
+
+.step.motion {animation-name: titAni; animation-duration: 0.8s;}
+
+.step_fo ul.motion li {animation-name: titAni; animation-duration: 0.8s;}
+.step_fo ul.motion li:nth-child(2) {animation-delay: 0.3s;}
+.step_fo ul.motion li:nth-child(3) {animation-delay: 0.6s;}
+
+.process .list.motion li {animation-name: titAni; animation-duration: 0.8s;}
+.process .list.motion li:nth-child(2) {animation-delay: 0.2s;}
+.process .list.motion li:nth-child(3) {animation-delay: 0.4s;}
+.process .list.motion li:nth-child(4) {animation-delay: 0.6s;}
+.process .list.motion li:nth-child(5) {animation-delay: 0.8s;}
+
+.done ul.motion li:nth-child(2) {transform-origin: 90px 170px;animation: dance 0.7s infinite;}
+@keyframes dance {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-10deg);}
+}
+
+.done ul.motion li:nth-child(3) {transform-origin: 90px 170px;animation: dance2 0.8s infinite;}
+@keyframes dance2 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(5deg);}
+}
+
+.done ul.motion li:nth-child(1) {animation:dance3 0.8s infinite;}
+@keyframes dance3 {
+    0% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+}
+
+.done .btn.motion:hover {animation-name:jumpAni; animation-duration: 0.8s;}
+@keyframes jumpAni {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-30px);}
+}
+
+
+/* 반응형 */
+/* 1023~ */
+@media screen and (max-width:1023px) {
+    .go .inner {width: 95%;}
+    .process .step_o .titBox .titinner {margin-right: 120px;}
+    .process .step_tw .titBox {margin-left: 120px;}
+    .process .step_o .img {width: 90%;}
+    .process .step_tw .left {margin-left: 120px;}
+    .process .step_th ul {width: 95%;}
+    .process .step_fo .titBox .titinner {margin-right: 120px;}
+    .process .step_fo ul {width: 95%;}
+    .process .lineBox svg:nth-child(1) {left:37%;}
+    .process .lineBox svg:nth-child(2) {right:37%;}
+    .process .lineBox svg:nth-child(3) {left:37%;}
+    .process .step_s {height: 900px;}
+    .process .step_s .tit {margin-left: 120px;}
+    .process .step_s p.num {left:-20px;}
+    .process .step_s p {margin-left: 120px;}
+    .process .step_s p.img {width: 700px;height: 700px;right:140px;top:450px;}
+    .process .step_s p.img img {width: 100%;height: 100%;}
+    .contact p.img {width: 100%; margin-top: 350px;}
+    .contact p.img img {width: 100%;}
+}
+
+/* 767~ */
+@media screen and (max-width:767px) {
+    .visual .renewal {width: 700px;}
+    .visual .renewal li img {width: 80%;margin-left: 12px;}
+    .visual .bottomBox {width: 95%;}
+    .visual .bottomBox p.left {position: absolute;width: 400px;height: 400px;margin-left: 0px;z-index: -1;opacity: 0.45;}
+    .visual .bottomBox .right {float:right;margin: 70px 30px 0 0;}
+    .visual .bottomBox .right p {color: #000;}
+    .go span {left:45%;top:35%;}
+    .go .left p.img img {width: 100%;}
+    .go .right .img {width: 220px;height: 220px; margin: 50px auto 0;}
+    .go .right .img p {font-size: 90px;line-height: 223px;}
+    .go .right .goTxt {right:0;}
+    .process .step_o .img {width: 100%;}
+    .process .step_o .titBox .titinner {margin-right: 50px;}
+    .step_o p.num {right:-5%;}
+    .process .step_tw .titBox {margin-left: 50px;}
+    .process .step_tw .left {margin-left: 50px;}
+    .process .step_tw p.right {width: 50%;top:200px;right:-10px;}
+    .process .step_th .titBox {width: 520px;}
+    .step_th p.num {left:18%;}
+    .process .step_fo .titBox .titinner {margin-right:50px;}
+    .step_fo p.num {right:-7%;}
+    .process .step_fo ul {width: 100%;}
+    .process .step_fo ul li {width: 100%;}
+    .process .step_fo ul li p.img {width: 230px;height: 230px;line-height: 225px;}
+    .process .step_fo ul li p.img img {width: 200px;margin-left: 15px;}
+    .process .step_fo ul li .topTxt {margin-left: 0;float: right;margin-right: 30px;}
+    .process .step_fo ul li:nth-child(2) .topTxt {float:left;margin: 250px 0 0 30px;}
+    .process .step_fo ul li:nth-child(3) .topTxt {margin-right:10px;}
+    .process .lineBox {width: 200px;left:50%;transform: translateX(-50%);overflow: hidden;}
+    .process .lineBox svg:nth-child(1) {left:10%;}
+    .process .lineBox svg:nth-child(2) {right:0;}
+    .process .lineBox svg:nth-child(3) {left:-28%;}
+    .step_fi p.num {left:28%;}
+    .process .step_s .tit {margin-left: 50px;}
+    .process .step_s p {margin-left: 50px;}
+    .process .step_s p.img {width: 80%;height: 500px;right:60px;}
+    .contact {height: 900px;}
+    .contact p.img {margin-top: 230px;}
+}
